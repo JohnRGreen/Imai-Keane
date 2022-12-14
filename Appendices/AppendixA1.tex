@@ -1,0 +1,81 @@
+% Appendix section A.2
+\documentclass{article}
+\input{../packages.tex}
+
+\begin{document}
+\label{section:A1}
+\quad A.1.      \textit{Backward Solution of the Bellman Equations: Interpolation and Integration Steps.}      At each asset and human capital grid point $\left(A_i, \tilde{K}_j\right)$ the value function is an integral over the taste shock and the wage shock. A straightforward way of performing these integrations is to use two-dimensional quadrature. That means, given the grid point $\left(A_i, \tilde{K}_j\right)$, calculate the quadrature points for the shocks,
+$$
+\left(\epsilon_{1, i_q}, \epsilon_{2, j_q}\right) \quad i_q=1, \ldots, n_q, \quad j_q=1, \ldots, n_q
+$$
+and then, solve for the optimal consumption and labor supply to get $V_{t, s}\left(A_t, \tilde{K}_t, \epsilon_{1, i_q}, \epsilon_{2, j_q}\right)$. Then, we can use quadrature to integrate over the value function to get the emax function. That is, form
+$$
+V_{t, s}^E\left(A_i, \tilde{K}_j\right)=\iint V\left(A_i, \tilde{K}_j, \epsilon_1, \epsilon_2\right) d \epsilon_1 d \epsilon_2 \approx \sum_{i_q, j_q} V_{t, s}\left(A_i, \tilde{K}_j, \epsilon_{i_q}, \epsilon_{j_q}\right) w_{i_q} w_{j_q}
+$$
+where $\left\{w_{i_q}\right\}$ are the weights for the quadrature integration. \par
+But this approach is still computationally extremely demanding for several reasons, which are mainly due to the difficulties of applying two-dimensional quadrature integration. First, we still need to evaluate the value function over asset and human capital grid points, and wage and taste shock quadrature points. That means we need to conduct two-dimensional Newton search routines at $n_A \times n_K$ $\times n_q \times n_q \times(T-20)$ points, where $n_A, n_K$ are the number of asset and human capital grid points, and $n_q$ is the number of quadrature points for taste shocks and human capital shocks. And it is the two-dimensional Newton search routine to find optimal consumption and labor supply which is by far the most computationally demanding part of the algorithm. Secondly, as we increase the dimension of the quadrature integration, even if we keep the quadrature points per dimension the same, we experience a decrease of the accuracy of the integration. Hence, if we wish to integrate over two dimensions and still have comparable accuracy to one-dimensional quadrature integration with $n_q$ quadrature points, it is in general likely that we will need more than $n_q \times n_q$ quadrature points.\par
+But these difficulties are minor compared to the problem of controlling for the range of $K$. Human capital $K=\tilde{K} \epsilon_{1, i_q}$ can take on very small values if both $\tilde{K}$ and $\epsilon_{1, i_q}$ are small, and can take on very large values if both $\tilde{K}$ and $\epsilon_{1, i_q}$ are large. The Newton search routine at very low or high values of human capital is both disproportionately time consuming and inaccurate compared to Newton search at other points.\par
+To avoid the quadrature integration with respect to the human capital shocks, we add another interpolation and approximation step that exploits the fact that there is a one-to-one mapping from human capital to wages. The basic logic is that the value function $V_{t, s}\left(A_t, \tilde{K}_t, \epsilon_{1, t}, \epsilon_{2, t}\right)$ is only a function of assets, $A_t$, human capital, $K_t$, and the taste shock $\epsilon_{2, t}$. Once $K_t$ is known, in order to calculate the value function, we do not need to know the values of the wage shock. So we go back to the original definition of the value function, in terms of $A_t, K_t=\tilde{K}_t \epsilon_{1, t}$ and $\epsilon_{2, t}$. The solution steps are as follows: \par
+\medskip
+\textit{Step 1.}     Integrating the value function with respect to the taste shock. Assume that the age $t+1$ emax function
+$$
+V_{t+1, s+1}^E\left(A_{t+1}, \tilde{K}_{t+1}\right)=E_t\left[V_{t+1, s+1}\left(A_{t+1}, \tilde{K}_{t+1}, \epsilon_{1, t+1}, \epsilon_{2, t+1}\right)\right]
+$$
+is already calculated. We use Gauss-Hermite quadrature to integrate the expected value function over the taste shocks at asset and human capital grid points $\left(A_i, K_j\right)$. First, calculate the quadrature points and weights for the taste shock $\epsilon_{2, t}$. Since $\epsilon_{2, t}$ has a log normal distribution with parameters $\mu_2=-\frac{1}{2} \sigma_2^2$ and $\sigma_2, \log \left(\epsilon_{2, t+1}\right)$ is normally distributed with mean $\mu_2$ and standard error $\sigma_2$. Let
+$$
+x_{h, l}, \quad l=1, \ldots, n_2
+$$
+be the points for Gauss-Hermite quadrature. Then,
+$$
+\epsilon_{2, l}^q=\exp \left(\sqrt{2} \sigma_2 x_{h, l}+\mu_2\right), \quad l=1, \ldots, n_2
+$$
+are the Gauss-Hermite quadrature points for the above log normal distribution. Given $\left(A_i, K_j, \epsilon_{2, l}^q\right)$, and the next period emax function, calculate the value function for each quadrature point of the taste shock $\epsilon_{2, l}^q$ as follows:
+$$
+V_{t, s}\left(A_i, K_j, \epsilon_{2, l}^q\right)=\max _{\left\{C_t, h_t\right\}}\left\{u\left(C_t, t\right)-v\left(h_t, \epsilon_{2, l}, t\right)+\beta V_{t+1, s+1}^E\left(A_{t+1}, \tilde{K}_{t+1}\right)\right\}
+$$
+subject to the intertemporal budget constraint and human capital production function. Notice that this step requires a two-dimensional Newton search for optimal $\left(C_t, h_t\right)$ at only $n_A \times n_K \times n_q$ grid points, so the factor of $n_q$ arising from the human capital shock is eliminated. Now, we can approximate the integration as follows using the quadrature procedure, with $w^q$ being the weights for GaussHermite quadrature.
+$$
+\begin{aligned}
+E_{\epsilon_2} & V_{t+1, s+1}\left(A_i, K_j \cdot \epsilon_2\right) \\
+&=\int_{-\infty}^{\infty} V_{t+1, s+1}\left(A_i, K_j, \exp (z)\right) \frac{1}{\sqrt{2 \pi \sigma_1}} \exp \left[-\frac{1}{2 \sigma_1^2}\left(z-\mu_1\right)^2\right] d z \\
+&=\int_{-\infty}^{\infty} V_{t+1, s+1}\left(A_i, K_j, \exp \left(\sqrt{2} \sigma_1 x+\mu_1\right)\right) \frac{1}{\sqrt{\pi}} \exp \left[-x^2\right] d x \\
+& \approx \frac{\sum_{i=1}^{n_q} V_{t+1, s+1}\left(A_i, K_j, \epsilon_{2, l}^q\right) w_l^q}{\sqrt{\pi}}
+\end{aligned}
+$$
+\textit{Step 2.}      Integrating the value function with respect to wage shock. Next, we integrate the value function with respect to the wage shocks to derive the emax function at the grid points $\left(A_i, \tilde{K}_j\right)$. From step 1 , for each grid point $\left(A_i\right.$, $K_j$ ), we already have the value function integrated with respect to the taste shocks. Now, for each given asset grid value $A_i$, we fit Chebychev polynomials of log human capital to $n_2$ values of the integrated value function. That is, we derive
+$$
+\hat{E}_{\epsilon_2} V_{t, s}\left(A_i, K, \epsilon_{2, t}\right)=\sum_{l=0}^{n_c} \pi_l T_l(\log (K))
+$$
+where $T_l(\log (K))$ is the $l$ th order Chebychev polynomial of $\log$ human capital. The coefficients $\pi$ are derived by least squares with dependent variables being
+$$
+E_{\epsilon_2} V_{t, s}\left(A_i, K_j, \epsilon_{2, t}\right), \quad j=1, \ldots, n_2
+$$
+Transform the Chebychev polynomials to the polynomials of $\log (K)$. Then,
+$$
+\hat{E}_{\epsilon_2} V_{t, s}\left(A_i, K, \epsilon_{2, t}\right)=\sum_{i=0}^{n_c} \pi_i^{\prime} \log (K)^i
+$$
+Notice that for any realized human capital shock $\epsilon_{1, t}$, the value function integrated over the taste shock is the sum of polynomials of the log wage shock and $\log (\tilde{K})$
+$$
+\begin{aligned}
+\hat{E}_{\epsilon_2} V_{t, s}\left(A_i, \tilde{K} \epsilon_{1, t}, \epsilon_{2, t}\right) &=\sum_{i=1}^{n_c} \pi_i^{\prime}\left[\log (\tilde{K})+\log \left(\epsilon_{1, t}\right)\right]^i \\
+&=\sum_{i=1}^{n_c} \pi_i^{\prime} \sum_{j=0}^i\left(\begin{array}{c}
+n_c \\
+j
+\end{array}\right)\left[\log \left(\epsilon_{1, t}\right)\right]^j[\log (\tilde{K})]^{i-j}
+\end{aligned}
+$$
+Hence, we can integrate the value function with respect to the wage shock by integrating each wage shock polynomial separately as the following equation shows:
+$$
+\begin{aligned}
+E\left\{V_{t, s}\left(A_i, \tilde{K} \epsilon_{1, t}, \epsilon_{2, t}\right)\right\} &=E_{\epsilon_1} \hat{E}_{\epsilon_2} V_{t, s}\left(A_i, \tilde{K} \epsilon_{1, t}, \epsilon_{2, t}\right) \\
+&=\sum_{i=1}^{n_c} \pi_i^{\prime} \sum_{j=0}^i\left(\begin{array}{c}
+n_c \\
+j
+\end{array}\right)\left\{E_{\epsilon_1}\left[\log \left(\epsilon_{1, t}\right)\right]^j\right\}[\log (\tilde{K})]^{i-j}
+\end{aligned}
+$$
+Here, since $\log \left(\epsilon_{1, t}\right)$ is normally distributed, integration of $\left[\log \left(\epsilon_{1, t}\right)\right]^j$ can be done analytically.\par
+\medskip
+Then, we again approximate the above equation over $A_t, \tilde{K}_t$ using Chebychev polynomials to derive the emax function at age $t$, which we use for solving the age $t-1$ Bellman equation. \par
+Notice that using the above algorithm, the problems of applying twodimensional quadrature are avoided. First, the Newton nonlinear search over consumption and labor needs only be applied to $n_A \times n_K \times n_q \times(T-20)$ points, hence reducing the computational time by a factor of $n_q$. Also, since only onedimensional quadrature integration is involved, there is no accuracy loss due to high-dimensional quadrature integration. Finally and most importantly, we only need to calculate the value function at the Chebychev grid point values for human capital and not at grid points for the human capital shock. Hence, we do not need to calculate value functions at extremely low or high human capital levels.
+\end{document}

@@ -1,0 +1,12 @@
+﻿Label,Estimate,SE
+Consumption CRRA,0.2617,5.73E-04
+ Constant,0.017,5.97E-05
+ Non-high school,0.5859,-0.0108
+ High school graduate,0.5241,-0.003821
+ Some college,0.5175,-0.01022
+ College graduate,0.546,-0.01967
+ Non-high school,0.2259,-0.005984
+ High school graduate,0.1672,-0.001954
+ Some college,0.1294,-0.007231
+ College graduate,0.1517,-0.00627
+Discount factor ,0.9529,2.47E-04

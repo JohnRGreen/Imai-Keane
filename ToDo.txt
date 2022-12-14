@@ -1,0 +1,56 @@
+To do list:
+
+For figure 2 will need to:
+1. Pull in, clean, sort data
+2. Divide data into cells based on current wage rate
+3. Plot relationship between hours and next period wage ($/hour)
+
+
+
+Questions:
+1. Do we need to make a 'style guide'?
+
+2. Let's look at All-Appendices.tex and explain what's going on at the top; what kind of document class are we declaring? Why do we input ./econtexRoot two times?
+
+3. If I am confused about a command, what is the best way to search for where it is defined?
+
+
+
+1. How do I check if I have a package properly installed? specifically the 'titlesec' package?
+
+2. How to define an equation using a macro, rather than calling it as a subfile?
+
+3. Should I dummy up data for the figures? I may be able to do figure 2 (descriptive) but I will not have enough time to actually reproduce the model, which is what would be required for the remaining figures, which show the fit of the simulation.
+
+4. I want to set up a tmp folder inside of my main directory to store all the .log and .aux docs that get created as a byproduct whenever I compile my document (but which I could conceivably need)
+
+5. Why is my table centered on its own page? (Compiling Section5.tex which calls Table1.tex as a subfile)
+
+
+
+
+What is this /econtexRoot?
+I think that \econtexRoot is a command that sends us back to the main BufferStockTheory folder
+
+And \econtexPaths defines the rest of the paths for the project, like \FigDir
+Inside we define a series of commands that define all of the needed paths
+
+So to do:
+1. set up an /exontexRoot.tex file which defines both commands
+   A. \econtexRoot
+   B. \econtexPaths
+2. set up an /econtexPaths.tex file which defines commands to access the folders:
+   A. FigDir
+   B. TableDir
+   C. Appendices
+   D. Data
+   E. Slides
+   F. Code
+   G. Resources
+   H. Equations
+
+
+
+./Resources/LaTeXInputs contains style guides; not sure if I need this
+
+\onlyinsubfile vs. \notinsubfile

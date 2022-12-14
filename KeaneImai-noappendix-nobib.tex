@@ -1,0 +1,73 @@
+\documentclass[12pt]{article}
+
+% load in all the packages I will need to use
+\input{packages}
+
+% For some reason generating a blank first page, which I would like to remove:
+\AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
+
+% format the title
+\titleformat{\section}[block]{\normalsize\bfseries\filcenter}{\thetitle.\quad}{.2em}{}
+\captionsetup[table]{labelsep=space}
+
+% He has the abstract with no title and centered
+\renewcommand{\abstractname}{}    % clear the title
+\renewcommand{\absnamepos}{empty} % originally center
+
+% set title and institutions etc.
+\title{\large \textbf{INTERTEMPORAL LABOR SUPPLY AND HUMAN CAPITAL ACCUMULATION} \thanks{Manuscript received May 2000; revised December 2}}
+\author{\normalsize\ BY SUSUMU IMAI AND MICHAEL P. KEANE\footnote{We are grateful to John Geweke, Richard Rogerson, Chris Flinn, the editor, and an anonymous referee for many useful comments. Please address correspondence to: Susumu Imai, Department of Economics, Concordia University, 1455 de Maisonneuve Blvd. West, Montreal, QC, H3G 1M8, Canada. Phone: (514)-848-2424, extension 3907. Fax: (514)-848-4536. E-mail: simai@alcor.con} \\
+  \\
+  \textit{Department of Economics, Concordia University, and CIREQ, Canada;}\\
+  \textit{Department of Economics, Yale University}
+}
+\date{}
+
+\begin{document} 
+
+\begin{adjustwidth}{50pt}{50pt}
+\maketitle
+
+\begin{abstract}
+    \subfile{Abstract}
+  
+\end{abstract}
+\end{adjustwidth}
+\hspace{0.5cm}
+% intro
+\subfile{./Sections/Section1.tex}
+
+%model
+\subfile{./Sections/Section2.tex}
+
+% solving
+\subfile{./Sections/Section3.tex}
+
+% MLE
+\subfile{./Sections/Section4.tex}
+
+% data
+\subfile{./Sections/Section5.tex}
+
+% estimation
+\subfile{./Sections/Section6.tex}
+
+% conclusions
+\subfile{./Sections/Section7.tex}
+
+\appendix
+%\hyperref{appendix}
+\label{appendix}
+\section*{APPENDIX}
+\cite{MaCurdy1981-iy}
+\subfile{./Appendices/AppendixA1.tex}
+\section*{ }
+\subfile{./Appendices/AppendixA2.tex}
+\section*{ }
+\subfile{./Appendices/AppendixA3.tex}
+
+\bibliographystyle{plainnat}
+\bibliography{./KeaneImai.bib}
+\nocite{*}
+
+\end{document}

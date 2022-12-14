@@ -1,0 +1,54 @@
+\documentclass{article}
+\input{../packages.tex}
+
+\begin{document}
+\section{SOLVING THE CONTINUOUS STOCHASTIC DYNAMIC PROGRAMMING PROBLEM}
+\label{section:solving}
+As discussed before, the problem agents solve in each period is as follows:
+\begin{equation} \tag{5'}
+  \begin{split}
+      V_{t,s}(A_t,K_t,\epsilon_{2,t})=\text{max}_{C_t,h_t} & \{u(C_t,t)-v(h_t, \epsilon_{2,t}) \\ & + \beta E_t V_{t+1,s+1}[(1+r)A_t + R_s K_t h_t \\ & -C_t, g(h_t,K_t,t)\epsilon_{1,t+1}, \epsilon_{2,t+1}]\}
+  \end{split}
+\end{equation}
+subject to the intertemporal budget constraint
+\begin{equation} \tag{2}
+  A_{T_1}=(1+r)A_t + W_{t,s} h_t - C_t
+\end{equation}
+and human capital production function
+\begin{equation} \tag{4}
+  K_{t+1} = g(h_t, K_t, t) \epsilon_{1,t+1}
+\end{equation}
+where $\epsilon_{1,t+1}$ is the human capital shock realized at age $t+1$.\par
+Notice that the next period's human capital $K_{t+1}$ is not known to the individual at age $t$. Let us rewrite the Bellman equation in terms of variables that the agent knows at age $t$. Define $\tilde{K}_{t+1}$ to be the next period human capital before the human capital shock is realized. That is,
+\begin{equation*}
+  \tilde{K}_{t+1} = g(h_t, K_t,t)
+\end{equation*}
+\begin{equation*}
+  K_{t+1} =  \tilde{K}_{t+1} \epsilon_{1,t+1}
+\end{equation*}
+Define the value function in terms of $ \tilde{K}_t$ as follows:
+\begin{equation*}
+  \begin{split}
+      V_{t,s}(A_t,\tilde{K}_t,\epsilon_{1,t},\epsilon_{2,t})=\text{max}_{C_t,h_t} & (u(C_t,t)-v(h_t, \epsilon_{2,t}) \\ & + \beta E_t V_{t+1,s+1} (A_{t+1},\tilde{K}_{t+1},\epsilon_{1,t+1},\epsilon_{2,t+1}))
+  \end{split}
+\end{equation*}
+Also, define the emax function $V^E$ as follows''
+\begin{equation*}
+V^E_{t+1,s+1}(A_{t+1},\tilde{K}_{t+1}) = E_t V_{t+1,s+1}(A_{t+1},\tilde{K}_{t+1},\epsilon_{1,t+1},\epsilon_{2,t+1}) 
+\end{equation*}
+Then, the above problem can be rewritten as follows:
+\begin{equation*}
+V_{t,s}(A_t, \tilde{K}_t,\epsilon_{1,t},\epsilon_{2,t}) = \text{max}_{C_t, h_t} [u(C_t,t) - v(h_t, \epsilon_{2,t}) + \beta V^E_{t+1,s+1} (A_{t+1},\tilde{K}_{t+1})]
+\end{equation*}
+subject to the intertemporal budget constraint (2), and human capital production function $\tilde{K}_{t+1}=g(h_t,K_t,t)$ where $K_t=\tilde{K}_t \epsilon_{1,t}$.\par
+There are several computational obstacles to solving the continuous stochastic dynamic programming problem that we assume the agents are facing. In order to numerically solve the above problem, in general, we have to start at the terminal period, $T$, and backsolve to $t = t_0$, where $t_0$ is the start of the planning period (assumed to be age 20).\par
+Now, let the state space for the emax function be $(A_t, \tilde{K}_t)$. Suppose we have already solved for the emax function for age $t + 1$. That is, we have already calculated the emax function
+\begin{equation*}
+V^E_{t+1,s+1}(A_{t+1},\tilde{K}_{t+1}) = E_t V_{t+1,s+1}(A_{t+1},\tilde{K}_{t+1},\epsilon_{1,t+1},\epsilon_{2,t+1}) 
+\end{equation*}
+for all possible values of $A_{t+1}$ and $K_{t+1}$. The next step in the backsolving process is to find the $V^E_{t,s} (A_t,\tilde{K}_t)$. Given the state space point, $(A_t, \tilde{K}_t)$, we need to derive the integral of $V_{t,s}(A_t, \tilde{K}_t, \epsilon_{1,t},\epsilon_{2,t})$ with respect to $\epsilon_{1,t}$ and $\epsilon_{2,t}$. Furthermore, in integrating for each value of the shock vector ($\epsilon_{1,t},\epsilon_{2,t}$), we need to find the optimal consumption and labor supply to derive the value $V_{t,s}(A_t, \tilde{K}_t, \epsilon_{1,t},\epsilon_{2,t})$. \par
+To get an idea of the magnitude of the computational problem involved in solving this model, assume that agents only have two possible choices of consumption and labor supply, that is, a total of four discrete choices in each period. Also, suppose that there is no taste shock or human capital shock that we need to integrate over. Then, because the state variables in future periods depend on past choices, for a discrete choice dynamic programming problem with $T - 20$ time periods, we need to evaluate the value function at least $4^{T-20}$ state space points. For example, if we assume there are 20 time periods, this amounts to at least 1.099511D+12 points. Suppose on the other hand, we discretize the state space of assets and human capital into $n_A \times n_K$ grid points. Further suppose that at each grid point, we evaluate the value function with respect to $n_1 \times n_2$ combinations of human capital shocks and taste shocks, and integrate over the shocks to get the emax function. Then the required number of evaluations of the value function is at least $n_A x n_K x n_1 x n_2 x (T - 20) x 4$, which is again extremely computationally demanding even with modest numbers of grid and quadrature points. In continuous choice dynamic programming problems, the state space is continuous, and hence the number of state space points is infinite. Therefore, explicit evaluation of the value function at each state space point $(A_t, K_t)$ is impossible. \par
+Furthermore, compared to discrete choice dynamic programming models, where optimization over the control variable only involves maximizing over a discrete set of choices, in the continuous choice problem we examine here, finding optimal consumption and labor supply requires a two-dimensional nonlinear
+ search at each state space point. \par
+In order to cope with the computational problem discussed above, we will use a set of approximation and interpolation methods. First, we only explicitly solve for the expected value functions at a finite set of asset and human capital grid points. The expected value functions at the remaining points are derived by Chebychev polynomial least squares interpolation. To solve for the expected value function at each state variable grid point, we need to integrate the value function over both the taste shock and the human capital shock. To avoid the quadrature integration with respect to the human capital shock, we add another interpolation and approximation step that exploits the fact that there is a one-to-one mapping from human capital to wages. We explain the algorithm in the \hyperref[appendix]{appendix}. 
+\end{document}

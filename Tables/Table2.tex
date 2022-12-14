@@ -1,0 +1,28 @@
+% Table 2
+%\documentclass[10pt, letterpaper]{article}
+%\usepackage{csvsimple-l3}
+%\usepackage[T1]{fontenc}
+%\usepackage[utf8]{inputenc}
+%\usepackage{tabularx,ragged2e,booktabs,caption}
+%\captionsetup[table]{labelsep=space}
+%\usepackage{hyperref}
+
+%\begin{document}
+\begin{center}
+  \hypertarget{QuantileAgeProfiles}{}
+  \begin{table}
+  \centering
+    \caption{ \label{tab:QuantileAgeProfiles} \\
+      \scriptsize QUANTILE AGE PROFILES}
+  \begin{tabular}{l l l l c l l l}
+    \hline%
+{} & \multicolumn{3}{c}{Wage Quantiles} &{} &  \multicolumn{3}{c}{Hours Quantiles}\\ \cline{2-4} \cline{6-8}
+Age & 25\% & 50\%  & 75\% &  {} & 25\% & 50\%  & 75\%  \\ \hline
+\csvreader[head to column names]{../Data/Table2data.csv}{}{
+  \\\Age & \twentyfivepercenta & \fiftypercenta & \seventyfivepercenta & {} & \twentyfivepercentb & \fiftypercentb & \seventyfivepercentb}
+    \\\hline
+  \end{tabular}
+  \end{table}
+\end{center}
+
+%%%%% \end{document}

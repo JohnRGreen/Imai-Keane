@@ -1,0 +1,74 @@
+% Appendix section A.2
+\documentclass{article}
+\input{../packages.tex}
+
+\begin{document}
+\quad A.2.     \textit{Simulated Likelihood Calculation.}     In this section, we describe the simulation steps that are required to construct the simulated likelihood function. \par
+\medskip
+\noindent \textit{Step 1.}      Simulate $\{K_t^m, h_t^m, C_t^m, A_t^m\}_{t=t_0}^T$ starting from the initial period as follows:
+\begin{enumerate}
+\item  Draw the true initial human capital $K_{t_0}^m$. \par
+  First, draw the initial period measurement error $\xi_0$ and then, derive
+  $$K_{t_0}^m = \dfrac{K_{t_0}^D}{\xi_0}$$
+  \item  Draw the true initial asset $A_{t_0}^m$. \par
+    If the initial asset is observed, then draw the measurement error $\xi_{3,t_0}$, and derive
+    $$A_{t_0}^m =A_{t_0}^D - \xi_{3,t_0} $$
+    If the initial asset is not observable, then draw $A_{t_0}^m$ from $N(\bar{A}, V_{\bar{A}})$.
+  \item Draw the taste shock
+    $$ \ln(\epsilon_2) \sim N(\frac{1}{2}\sigma_2^2,\sigma_2) $$
+      and solve for the optimal consumption and labor supply. That is,
+      \begin{equation*}
+        \begin{split}
+          \{C_{t_0}^m,h_{t_0}^m\} = \text{arg max}_{ \{C_{t_0},h_{t_0}\} }& \{u(C_{t_0},t_0) - v(h_{t_0}, \epsilon_{2,t_0}) + \beta E_{t_0} V_{t_0+1}[(1+r)A_{t_0} \\
+          & + K_{t_0}^m h_{t_0} - C_{t_0}, \hat{K}_{t_0 + 1}, \epsilon_{t_0 + 1}]\}
+        \end{split}
+        \end{equation*}
+        subject to
+        \begin{equation*}
+        \begin{split}
+          A_{t_0+1} & = (1+r)A_{t_0}^m + K_{t_0}^m h_{t_0} - C_{t_0} \\
+          \hat{K}_{t_0+1}& = g(h_{t_0},  K_{t_0}^m, t_0)
+        \end{split}
+      \end{equation*}
+      Notice that we already have the polynomial approximation of the emax function
+      $$V^E ( A_{t_0+1},\hat{K}_{t_0 + 1}) = E_{t_0}V_{t_0 + 1}(A_{t_0+1},\hat{K}_{t_0 + 1}, \epsilon_{1,t_0+1}, \epsilon_{2,t_0+1})$$
+      from the DP solution, which we will use in this case.
+    \item Draw the human capital shock $\epsilon_{1,t_0+1},$ and derive the next period state variables.\par
+      That is,
+       \begin{equation*}
+        \begin{split}
+          A_{t_0+1}^m & = (1+r)A_{t_0}^m + K_{t_0}^m h_{t_0}^m - C_{t_0}^m \\
+          \hat{K}_{t_0+1}& = g(h_{t_0}^m,  K_{t_0}^m, t_0) \\
+           K_{t_0+1} & =  \hat{K}_{t_0} \epsilon_{1,t_0+1}
+        \end{split}
+      \end{equation*}
+    \item Now, repeat (3) and (4) until the end period $T$ to derive the sequence of variables $\{K_t^m,h_t^m,C_t^m,A_t^m\}_{t=t_0}^T$.
+    \end{enumerate}
+    \textit{Step 2.}     Given the simulated sequence of variables $\{K_t^m,h_t^m,C_t^m,A_t^m\}_{t=t_0}^T$, we then derive the measurement error. Then, we calculate the log likelihood increment for person $i$  at the $m$\textsuperscript{th} simulation draw as follows.\par
+    Let us denote
+           \begin{equation*}
+        \begin{split}
+          \xi_0^m &= \log K_{t_0}^D - \log K_{t_0}^m \\
+          \xi_{1,t}^m &= \log K_t^D - \log h_t^D - \log K_t^m - \log h_t^m \\
+          \xi_{2,t}^m &= h_t^D - h_t^m \\
+           \xi_{3,t}^m &=  A_t^D - A_t^m \\
+        \end{split}
+      \end{equation*}
+If the initial wage at period to is available in the data, then we construct the initial wage measurement error $\tilde{\xi}_0^m$ and the log density of $\tilde{\xi}_0^m$ becomes part of the log likelihood increment of person $i$. If wage and hours data for person $i$ at period $t > t_0$ is available, then we derive the labor income measurement error  $\tilde{\xi}_1^m$, and the log density of  $\tilde{\xi}_1^m$, becomes part of the log likelihood increment for person $i$ at period $t$. On the other hand, if either wage or hours xor both for person $i$ at period $t > t_0$ are not available, then the log likelihood increment for person $i$ at period $t$ does not contain any wage data $K_t^D$. Similarly, if hours data for person $i$ at period $t$ is available, then we derive the hours measurement error $\tilde{\xi}_2^m$, and the log density of $\tilde{\xi}_2^m$ becomes part of the log likelihood increment for person $i$ at period $t$. On the other hand, if hours data are not available for person $i$ at period $t$, then the log likelihood increment for person $i$ at period $t$ does not contain any hours information. Construction of the log likelihood increment for assets for person $i$ at period $t$ is done similarly. \par
+Then, the log likelihood increment for person $i$ is
+           \begin{equation*}
+             \begin{split}
+               l_i^m = & \sum_{t=t_0+1}^T \left[ \dfrac{(\tilde{\xi}_{1,t}^m+\frac{1}{2}\sigma_1)^2}{-2\sigma_1^2} - \log \sigma_1 - (\log K_t^D + \log h_t^d) \right] I(K_t^D, h_t^D \text{ observable }) \\
+                       & + \sum_{t=t_0}^T \left[  \dfrac{(\tilde{\xi}_{2,t}^m)^2}{-2\sigma_1^2} - \log \sigma_1 \right] I(h_t^D \text{ observable }) \\
+                       & + \sum_{t=t_0+1}^T \left[  \dfrac{(\tilde{\xi}_{3,t}^m)^2}{-2\sigma_3^2} - \log \sigma_3 \right] I(A_t^D \text{ observable }) \\
+                       & + \left[ \dfrac{(A_{t_0}^m - \bar{A})^2}{-2 \sigma_{\bar{A}}^2} - \log \sigma_{\bar{A}} \right] I(A_t^D \text{ observable }) \\
+               & + \left[ \dfrac{ ( \tilde{\xi}_0^m + \frac{1}{2} \sigma_0)^2}{-2 \sigma_0^2} - \log \sigma_0 - \log K_{t_0}^D \right] I(K_t^D, h_t^D \text{ observable })
+        \end{split}
+      \end{equation*} \par
+      We set the starting time $t_0$ such that both $K_{t_0}^D$ and $h_{t_0}^D$ are observable. \par
+      \noindent \textit{Step 3.}     We repeat the simulation and likelihood increment calculation for $m = 1, \dots , M$ and derive the simulated log likelihood increment for individual $i$ as follows:
+      $$l_i = \log \left[ \sum_{m=1}^M \exp (l_i^m)\right]$$
+  The total log likelihood is
+  $$l = \sum_{i=1}^N l_i$$
+      
+  \end{document}

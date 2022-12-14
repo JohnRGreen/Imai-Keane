@@ -1,0 +1,51 @@
+% Section 4 page 612 -
+\documentclass{article}
+\input{../packages.tex}
+
+\begin{document}
+\section{MAXIMUM LIKELIHOOD ESTIMATION}
+\label{section:MLE}
+We use NLSY79 data to estimate the parameters of the model. There are several features of the data that we need to consider when we estimate the model. First, as in most other panel data, variables such as wages, labor supply, and assets are measured with error. Hence, the estimation procedure should incorporate a measurement error component in those variables. Second, there are periods where assets are missing. Hence, during the estimation process, we need to account for the missing asset data. In our likelihood function, we take into account both of these problems.\par
+Suppose that for age $t$, period $s$, the true wage $W_{t,s} = R_s K_t$, labor supply, and assets $(W_{t,s}, h_t, A_t)$ are all observed with measurement error. Denote by $\xi_t = (\xi_{1,t}, \xi_{2,t}, \xi_{3,t})$ the vector of the measurement errors in observed labor income, hours of labor supply, and assets, respectively. Assume that the labor income measurement error is log normally distributed with mean 1. That is,
+\begin{equation*}
+  \begin{split}
+    h_t^D &= h_t + \xi_{2,t}\\
+    \text{ln}(\xi_{1,t}) & \sim N(-\frac{1}{2} \sigma_{\xi,1}^2,\sigma_{\xi,1})
+    \end{split}
+  \end{equation*}
+  where $Y_t$ is the true labor income at period $t$ (which equals $W_th_t$) and $Y_t^d$ is the observed labor income in the data. \par
+  Furthermore, for the measurement error in assets, we assume the following:
+  \begin{equation*}
+  \begin{split}
+    A_t^D &= Ah_t + \xi_{3,t}\\
+    \xi_{3,t} & \sim N(0,\sigma_{\xi,3})\\
+    \sigma_{\xi,3}& = \sigma_{\xi,3,1}+\sigma_{\xi,3,2}(t-19)
+    \end{split}
+  \end{equation*}
+  where $A_t$ is the true labor income at period $t$ and $h_t^d$ is the observed labor income in the data. \par
+  And in order to fill in the missing first period assets, we assume they are distributed as follows:
+  \begin{equation*}
+    A_{t_0} \sim N(\bar{A},V_{\bar{A}})
+    \end{equation*}
+    We let $\bar{A}$ differ depending on whether the first period is at age 20 or later. Also, we assume that
+    
+    $$ R_s = 1 $$
+    for all periods s. Hence,
+    $$W_{t,s}=R_s K_t = W_t = K_t $$
+    We denote $K_t^D = W_t^D$, to be the observed human capital, which we derive by dividing the annual labor income by the annual hours worked, i.e.,
+    $$ K_t^D = \dfrac{Y_t^D}{h_t^D}$$
+    This is different from the true human capital $K_t$ by a measurement error component. That is, for observations after the initial period $t_0$,
+    $$ K_t^D = K_t h_t \dfrac{\xi_{1,t}}{h_t^D}$$
+    Finally, for the initial period wage, we assume the following measurement error:
+    $$K_{t_0}^D = K_{t_0} \xi_0$$
+    where
+    $$\text{ln}(\xi_0) \sim N(-\frac{1}{2} \sigma_{\xi_0}^2,\sigma_{\xi_0}^2)$$
+    Also, the interest rate $r$ is set to be 5\%.\par
+    Here, we adopt the simulated ML method. Denote by $\{K_t^m, h_t^m, C_t^m, A_t^m\}_{t=t_0}^T$ the sequence of the true human capital, true labor supply, true consumption, and true assets at the m\textsuperscript{th} simulation draw. We repeat the simulation $M$ times and derive the likelihood in the steps described in the \hyperref[appendix]{appendix}. \par
+   As discussed earlier, the major obstacle to the ML estimation of the continuous choice dynamic programming problem is the iterative solution of the Bellman equation, which requires a Newton search routine for optimal consumption and labor supply at each asset and human capital grid point and quadrature point of the taste shock. In a standard ML routine, a single iteration requires evaluation of the likelihood and its partial derivatives with respect to all the model parameters. \par
+   The usual practice is to calculate the derivatives of the likelihood function numerically as follows: Suppose that the parameter vector is $\theta = (\theta_1, \theta_2,... ,\theta_n)$. Then, one solves the entire DP problem to evaluate the log likelihood for $\theta$, $l(\theta,X^D)$, which is a function of parameters $\theta$ and data $X^D$. Then, for each $i = 1,..., n$, one solves the DP problem and evaluates the likelihood at parameter values $(\theta_1, \theta_2, \dots, \theta_i + \Delta_i, \dots, \theta_n)$ where $\Delta_i$ is a small positive number. Then, the numerical derivative is
+   $$\dfrac{\partial l(\theta,X^D)}{\partial \theta_i} = \dfrac{l(\theta_1, \theta_2, \dots, \theta_i + \Delta_i, \dots, \theta_n)- l(\theta,X^D)}{\Delta_i} $$
+ Now, the effect on the value function of a marginal change in outside conditions can be decomposed into two components. The first component results from the change in the value function with the choice variables held constant, and the second component results from the change in the value function due to changes in the choice variables. From the envelope theorem, we know that the magnitude of the second component is of second order. Hence, as long as changes in the parameters are small, a valid approximation for the likelihood function under the parameter value
+$$\theta^{'i} = (\theta_1,\theta_2, \dots, \theta_i + \Delta_i, \dots, \theta_n)$$
+is obtained by constructing the value functions and the likelihood with the consumption and labor supply choices held fixed at the values derived under the parameter value $\theta$. Because the approximation error in the value functions is of second order, the approximation error in the likelihood function evaluation is also of second order. Hence, for one evaluation of likelihood and all its partial derivatives, the Newton search algorithm over optimal consumption and labor supply at each grid point and quadrature point only needs to be done once. Since the Newton search algorithm is the most computationally demanding part of the whole likelihood evaluation, this significantly reduces the computational burden. In fact, this approach makes the computational cost of estimating the continuous choice model comparable to that of estimating discrete choice dynamic programming models.
+\end{document}

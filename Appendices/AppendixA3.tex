@@ -1,0 +1,16 @@
+% Appendix section A.3
+\documentclass{article}
+\input{../packages.tex}
+
+\begin{document}
+\label{appendixA3}
+\bigskip
+\quad A.3.     \textit{Data Generation.}     We derived the wage, hours, and asset data from the NLSY as follows: \par
+\medskip
+\noindent \textit{hours data:} We use the variable "Number of hours worked in past calendar year" from 1979 to 1994.
+\noindent \textit{wage data:} We first get total wage income data from the variable "Total Income from wages and salary income past calendar year" from 1979 to 1994. And after adjusting for inflation using the GDP deflator, we divide the income variable by the hours variable to get the hourly wage rate. \par
+\noindent \textit{asset data:} We added up the following variables in the NLSY to construct total positive assets: "Total market value of vehicles including automobiles r/spouse own," "Total market value of farm/business/other property r/spouse own," "Market value of residential property r/spouse own," "Total market value of stocks/bonds/mutual funds," "Total amount of money assets like savings accounts of r/spouse," "Total market value of all other assets each worth more than \$500." \par
+We then added up the following variables to construct total negative assets: "Total amount of money r/spouse owe on vehicles including automobiles," "Total amount of debts on farm/business/other property r/spouse owe," "Amount of mortgages and back taxes r/spouse owe on residential property," "Total amount of other debts over \$500 r/spouse owe." \par
+The total amount of assets is calculated by subtracting the total amount of negative assets from the total amount of positive assets.
+
+\end{document}

@@ -1,0 +1,41 @@
+% Table 6
+%\documentclass[10pt, letterpaper]{article}
+%\usepackage{csvsimple-l3}
+%\usepackage[T1]{fontenc}
+%\usepackage[utf8]{inputenc}
+%\usepackage{tabularx,ragged2e,booktabs,caption}
+%\captionsetup[table]{labelsep=space}
+
+%\begin{document}
+
+\begin{center}
+  \hypertarget{OLSIV}{}
+  \begin{table}
+  \centering
+    \caption{ \label{tab:OLSIV} \\
+      \scriptsize ML, OLS, IV RESULTS}
+    \begin{tabular}{llll}
+\hline Age & & $b_2$ & $a_2$ \\
+\hline $20-36$ & ML & $3.82(0.0124)$ & $1.26(0.000850)$ \\
+\multicolumn{2}{l}{ Simulated data } & & \\
+$20-64$ & OLS & $-0.444(0.00248)$ & $-1.25(0.0126)$ \\
+& 3SLS & $0.971(0.0941)$ & $2.03(0.0999)$ \\
+$20-56$ & OLS & $-0.301(0.00247)$ & $-2.33(0.0273)$ \\
+& 3SLS & $1.13(0.259)$ & $1.89(0.204)$ \\
+$20-46$ & OLS & $-0.270(0.00280)$ & $-2.70(0.0382)$ \\
+& 3SLS & $0.537(0.217)$ & $2.86(0.753)$ \\
+$20-36$ & OLS & $-0.293(0.00366)$ & $-2.41(0.0426)$ \\
+& 3SLS & $0.325(0.256)$ & $4.08(2.42)$ \\
+\multicolumn{2}{l}{ NLSY79 data } & & \\
+$20-36$ & OLS & $-0.231(0.00659)$ & $-3.33(0.124)$ \\
+& 3SLS & $0.260(0.0769)$ & $4.85(1.14)$ \\
+      \hline
+      \multicolumn{4}{l}{NOTE: Delta method is used to calculate the standard errors for $b_2$ for}\\
+      \multicolumn{4}{l}{ML and $a_2$ for OLS and 3SLS results.}\\
+      \multicolumn{4}{l}{Std. errors are in parentheses. Instruments: const, experience (which}\\
+      \multicolumn{4}{l}{is age-19), experience squared, twice lagged wage.}\\
+  \end{tabular}
+  \end{table}
+\end{center}
+
+%\end{document}

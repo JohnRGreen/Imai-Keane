@@ -1,0 +1,27 @@
+% Table 3
+%\documentclass[10pt, letterpaper]{article}
+%\usepackage{csvsimple-l3}
+%\usepackage[T1]{fontenc}
+%\usepackage[utf8]{inputenc}
+%\usepackage{tabularx,ragged2e,booktabs,caption}
+%\captionsetup[table]{labelsep=space}
+
+%\begin{document}
+\begin{center}
+  \hypertarget{AfterCensoring}{}
+  \begin{table}
+  \centering
+    \caption{\label{tab:AfterCensoring}  \\
+      \scriptsize MEAN AGE PROFILES AFTER CENSORING}
+  \begin{tabular}{l c c c c c c c}
+    \hline%
+    {} & Mean & Sample & Mean & Sample & Zero & Mean & Sample \\
+    Age & Wage & Size & Hours & Size & Hours & Assets & Size \\ \hline
+\csvreader[head to column names]{../Data/Table3data.csv}{}{
+  \\\Age & \MeanWage & \SampleSizeWage & \MeanHours & \SampleSizeHours & \ZeroHours & \MeanAssets & \SampleSizeAssets}
+  \\\hline
+  \end{tabular}
+  \end{table}
+\end{center}
+
+%\end{document}

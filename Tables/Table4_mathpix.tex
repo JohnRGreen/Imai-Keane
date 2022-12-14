@@ -1,0 +1,85 @@
+% Table 4 pt 1
+\documentclass[10pt, letterpaper]{article}
+\usepackage{csvsimple-l3}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{tabularx,ragged2e,booktabs,caption}
+\usepackage{tablefootnote}
+\usepackage{longtable}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{adjustbox}
+\usepackage{tabularray}
+\UseTblrLibrary{booktabs}
+\renewcommand{\thefootnote}{\alph{footnote}}
+\captionsetup[table]{labelsep=space}
+
+\begin{document}
+\begin{center}
+ \begin{table}
+  \centering
+    \caption{ \\
+     \scriptsize ESTIMATION RESULTS} 
+%\noindent\makebox[\textwidth]{%
+   \begin{tabular}{c l l l}
+  \hline%
+    \multicolumn{3}{l}{Utility Function Parameters} & {}  \\
+    \multicolumn{4}{l}{\quad Disutility of labor} \\ 
+     {} &  $a_2$  & Disutility of labor curvature  & $1.2618 (8.504 \times 10^{-4})$ \\
+    $b$ &  $b_n$  &   Non-high school &$1.831 \times 10^{-5} (1.89 \times 10^{-7})$ \\
+    {} &   $b_h$  &  High school graduate  & $1.65 \times 10^{-5} (6.80 \times 10^{-8})$ \\
+    {} &   $b_c$ &  Some college  & $1.62 \times 10^{-5} (1.04 \times 10^{-7})$ \\
+    {} &   $b_{cg}$  &  College graduate  & $1.75 \times 10^{-5} (2.04 \times 10^{-7})$ \\
+    {} &   $\sigma_1$ &  Std. error of disutility shock  & $0.01156 (6.75 \times 10^{-4})$ \\
+    \multicolumn{4}{l}{Consumption utility}  \\
+    {} &   $a_1 $  &  Consumption CRRA  &$0.2617 (5.73 \times 10^{-4}) $\\
+    {} &   $C_0 $ &  Constant  & $0.017 (5.97 \times 10^{-5}) $\\
+    $C_1$ &   $C_{1n} $ &   Non-high school  & $0.5859 (-0.0108) $\\
+    {} &   $C_{1h} $&  High school graduate  & $0.5241 (-0.003821)$\\
+    {} &    $C_{1c} $ &  Some college  & $0.5175 (-0.01022) $\\
+    {} &    $C_{1cg} $&  College graduate  &$0.546 (-0.01967) $\\
+    $C_2$ &     $C_{2n} $ & Non-high school   & $0.2259 (-0.005984)$\\
+    {} &     $C_{2h} $&  High school graduate  &$0.1672 (-0.001954) $\\
+    {} &    $C_{2c} $ &   Some college  & $0.1294 (-0.007231)$\\
+    {} &     $C_{2cg} $& College graduate   & $0.1517 (-0.00627)$\\
+     {} &    $\beta $ &  Discount factor  & $0.9529 (2.47 \times 10^{-4})$\\
+     \pagebreak
+    \multicolumn{4}{l}{Production Function Parameters \footnotemark} \\
+    $\delta$ &   $\delta_n $ &   Non-high school  & $0.404 (0.002633) $  \\
+    {} &   $ \delta_h $&  High school graduate  &  $0.3458 (9.71 \times 10^{-4}) $ \\
+    {} &   $ \delta_c$ &  Some college  &  $ 0.3189 (0.002413)$\\
+    {} &   $ \delta_{cg}$&  College graduate  & $0.3434 (0.002145) $ \\
+
+    $k_0$ &   $ k_{0n} $ &   Non-high school  &  $ 0.01588 (0.002521)$\\
+    {} &   $ k_{0h} $&  High school graduate  &  $ 0.02843 (0.002224)$\\
+    {} &   $ k_{0c}$ &  Some college  &  $0.05387 (0.001278) $\\
+    {} &   $ k_{0cg}$&  College graduate  & $ 0.05719 (0.002262)$ \\
+
+    $A_0$ &   $ A_{0n} $ &   Non-high school  & $ 0.1304 (6.91  \times 10^{-4})$ \\
+    {} &   $ A_{0h} $&  High school graduate  &  $0.1513 (3.15  \times 10^{-4}) $\\
+    {} &   $ A_{0c}$ &  Some college  &  $ 0.1536 (6.59  \times 10^{-4})$\\
+    {} &   $ A_{0cg}$&  College graduate  & $0.1463 (5.12  \times 10^{-4}) $ \\
+    
+    $A_1$ &   $ A_{1n} $ &   Non-high school  & $-0.002139 (1.83  \times 10^{-5}) $ \\
+    {} &   $ A_{1h} $&  High school graduate  &  $ -0.00342 (1.62  \times 10^{-5})$\\
+    {} &   $ A_{1c}$ &  Some college  &  $-0.002915 (7.11  \times 10^{-5}) $\\
+    {} &   $ A_{1cg}$&  College graduate  & $-0.003329 (6.94  \times 10^{-5}) $ \\
+    
+    $\alpha$ &   $\alpha_n $ &   Non-high school  &  $ 0.2279 (4.14 \times 10^{-4})$\\
+    {} &   $ \alpha_h $&  High school graduate  &  $0.2243 (1.36  \times 10^{-4}) $\\
+    {} &   $ \alpha_n$ &  Some college  & $ 0.2258 (3.31  \times 10^{-4})$ \\
+    {} &   $\alpha_h $&  College graduate  &  $ 0.2275 (3.31  \times 10^{-4})$\\
+    {} &   $B_2$ &  $-B_2(h+d_1)$  &  $4.05  \times 10^{-4} (7.29  \times 10^{-7}) $\\
+    {} &   $B_1$  & Additive constant in capital &  $ 0.04021 (7.29  \times 10^{-4})$\\
+      {} & {} &  term $B_1+K$   & {} \\
+    {} &   $\sigma_0$ &  Std. error of wage shock  &  $0.05781 (6.05  \times 10^{-4}) $\\
+    {} &   $d_1$  &  Additive constant in hours &  $367.2 (6.035) $\\
+     {} & {} &  term $h+d_1$  & {} \\
+     \hline
+        {} & {} &  \multicolumn{2}{r}{ (continued)} \\
+  \end{tabular}
+%\end{adjustbox}
+ \label{fig:EstimationResults}
+\end{table}
+\end{center}
+\end{document}

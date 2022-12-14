@@ -1,0 +1,7 @@
+﻿Label,Estimate,SE
+Disutility of labor curvature,1.2618,8.50E-04
+Non-high school,1.83E-05,1.89E-07
+High school graduate,1.65E-05,6.80E-08
+Some college,1.62E-05,1.04E-07
+College graduate,1.75E-05,2.04E-07
+Std. error of disutility shock,0.01156,6.75E-04
