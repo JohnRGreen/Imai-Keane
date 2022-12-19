@@ -1,6 +1,4 @@
-Still to do (Dec 14 2022):
-
-- Make a readme.txt file explaining the project and its components and get it to display on GitHub
--Make slides out of the paper
--Write a "reproduce.sh" script that will compile the paper and its slides
--Submit the project
+Next steps:
+Make Jupyter slides
+Code up model to reproduce results
+Make Jupyter notebook walking through model
