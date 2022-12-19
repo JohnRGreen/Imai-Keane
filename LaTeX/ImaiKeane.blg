@@ -2,74 +2,50 @@ This is BibTeX, Version 0.99d (TeX Live 2022/dev/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: LaTeX/ImaiKeane.aux
 The style file: plainnat.bst
-I couldn't open database file ./ImaiKeane.bib
----line 139 of file LaTeX/ImaiKeane.aux
- : \bibdata{./ImaiKeane.bib
- :                         }
-I'm skipping whatever remains of this command
-I found no database files---while reading file LaTeX/ImaiKeane.aux
-Warning--I didn't find a database entry for "Lucas1969-ti"
-Warning--I didn't find a database entry for "MaCurdy1981-iy"
-Warning--I didn't find a database entry for "Browning1985-ox"
-Warning--I didn't find a database entry for "Altonji1986-zf"
-Warning--I didn't find a database entry for "Heckman1976-lc"
-Warning--I didn't find a database entry for "Cooper1999-af"
-Warning--I didn't find a database entry for "Chang2002-zs"
-Warning--I didn't find a database entry for "Heckman1976-lb"
-Warning--I didn't find a database entry for "Ben-Porath1967-sf"
-Warning--I didn't find a database entry for "Blinder1976-dv"
-Warning--I didn't find a database entry for "Shaw1989-jb"
-Warning--I didn't find a database entry for "Altug1998-ou"
-Warning--I didn't find a database entry for "Eckstein1989-ji"
+Database file #1: ./ImaiKeane.bib
 Warning--I didn't find a database entry for "Keane2001-yk"
-Warning--I didn't find a database entry for "Geweke2001-px"
-Warning--I didn't find a database entry for "Keane1994-sm"
-Warning--I didn't find a database entry for "Hotz1988-gl"
-Warning--I didn't find a database entry for "Keane1997-mg"
-Warning--I didn't find a database entry for "Eichenbaum1988-kg"
-Warning--I didn't find a database entry for "Prescott1986-vn"
-Warning--I didn't find a database entry for "Hubbard1994-qp"
-Warning--I didn't find a database entry for "Goeree2000-la"
-Warning--I didn't find a database entry for "Carroll1996-yj"
-You've used 0 entries,
+Warning--empty note in Carroll1996-yj
+Warning--empty note in Cooper1999-af
+Warning--empty journal in Goeree2000-la
+You've used 23 entries,
             2773 wiz_defined-function locations,
-            638 strings with 5477 characters,
-and the built_in function-call counts, 33 in all, are:
-= -- 0
-> -- 0
-< -- 0
-+ -- 0
-- -- 0
-* -- 2
-:= -- 10
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
-chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 1
-format.name$ -- 0
-if$ -- 1
-int.to.chr$ -- 1
+            808 strings with 10470 characters,
+and the built_in function-call counts, 10798 in all, are:
+= -- 1110
+> -- 457
+< -- 20
++ -- 158
+- -- 134
+* -- 915
+:= -- 1696
+add.period$ -- 124
+call.type$ -- 23
+change.case$ -- 113
+chr.to.int$ -- 22
+cite$ -- 49
+duplicate$ -- 462
+empty$ -- 873
+format.name$ -- 175
+if$ -- 2251
+int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 0
-newline$ -- 8
-num.names$ -- 0
-pop$ -- 0
+missing$ -- 20
+newline$ -- 177
+num.names$ -- 94
+pop$ -- 137
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 90
 quote$ -- 0
-skip$ -- 1
+skip$ -- 337
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
-text.length$ -- 0
+substring$ -- 536
+swap$ -- 43
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
-warning$ -- 0
-while$ -- 0
+type$ -- 253
+warning$ -- 3
+while$ -- 109
 width$ -- 0
-write$ -- 7
-(There were 2 error messages)
+write$ -- 410
+(There were 4 warnings)

@@ -18,5 +18,5 @@ This GitHub repository implements a reproduction of the 2004 paper by Susumu Ima
 - Paperpile to track sources and create a BibTex file
 - Natbib to create a bibliography and cite sources
 - Parts of the paper included as subfiles as well as printed using "input"
-- File structure is organized using "econtexPaths" and "econtexRoot" to enable Overleaf compilation
+- File structure is organized using "econtexPaths" and "econtexRoot" to enable Overleaf compilation; these are defined, along with a few other tools, in the "TeXtools" folder
 - Tables, figures, and equations are created separately and included as subfiels, images, and printed using "input"

@@ -1,6 +1,6 @@
 % Section 2 The Model Specification starting on page 605
 \documentclass{article}
-\input{../packages.tex}
+\input{\tools/packages.tex}
 %\input{../econtexRoot}
 
 \begin{document}
@@ -45,7 +45,7 @@ At age $t$, time period $s$, the agent's decision process can be described by th
     \begin{equation*}
       u(C_t,t)=A(t)\dfrac{C_t^{a_1}}{a_1}
     \end{equation*}
-    where $A(t)$ is a spline in age, and $a_1<1$ is a constant.\footnote[4]{The reason that age effects are needed to explain observed consumption behavior is as follows: In the data, wages and labor supply are both relatively small on average when people are young compared to when they are at prime age. Hence, annual labor income is low when people are young. Therefore, if people smooth consumption, they should be in debt when young, and repay it in later years of the life cycle. But this is not the case in the data. (See Table 3 for mean age profiles of wage, hours, and assets.) Thus, age effects in consumption are necessary to explain the positive asset holdings for youths observed in the data. To capture this, the utility of consumption should be smaller when young, so that consumption rises over time, and individuals would not go heavily into debt early in life. Alternative mechanisms to explain the observed asset pattern would be liquidity constraints, as in \cite{Keane2001-yk}, or a more general utility function with a very strong precautionary saving motive. \par
+    where $A(t)$ is a spline in age, and $a_1<1$ is a constant.\footnote[4]{The reason that age effects are needed to explain observed consumption behavior is as follows: In the data, wages and labor supply are both relatively small on average when people are young compared to when they are at prime age. Hence, annual labor income is low when people are young. Therefore, if people smooth consumption, they should be in debt when young, and repay it in later years of the life cycle. But this is not the case in the data. (See Table 3 for mean age profiles of wage, hours, and assets.) Thus, age effects in consumption are necessary to explain the positive asset holdings for youths observed in the data. To capture this, the utility of consumption should be smaller when young, so that consumption rises over time, and individuals would not go heavily into debt early in life. Alternative mechanisms to explain the observed asset pattern would be liquidity constraints, as in \cite{KeaneandWolpin2001}, or a more general utility function with a very strong precautionary saving motive. \par
 The age effect $A(t)$ starts at $C_0 C_1$ at age 20, then gradually changes to $C_0 C_2$ at age 25 and to $C_0$ at age 33. Thereafter, $A(t)$ stays constant at the value $C_0$. That is, $A(t)$ is a linear spline with kinks at age 25 and 33. Agents in our model attempt to equate the marginal utility of consumption across time. If they place less value on consumption when young, this would be reflected in $C_1 < 1$ and $C1 + C2 < 1$. Then, at younger ages, less consumption is necessary to reduce the marginal utility of consumption to a given level.} \par
 The disutility of labor, which is a function of hours $h$, is assumed to have the following functional form:
 \begin{equation} \tag{6}

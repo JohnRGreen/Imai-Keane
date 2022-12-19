@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.12.7)  19 DEC 2022 11:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.12.7)  19 DEC 2022 15:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -22,7 +22,9 @@ File: size12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
-) (./packages.tex
+)
+(./TeXtools/econtexRoot.tex (./TeXtools/econtexPaths.tex))
+(./TeXtools/packages.tex
 (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
@@ -734,7 +736,6 @@ Package: abstract 2009/06/08 v1.2a configurable abstracts
 \absparindent=\skip80
 \absparsep=\skip81
 ))
-(./econtexRoot.tex (./econtexPaths.tex))
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count325
@@ -743,24 +744,24 @@ File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
 (LaTeX/ImaiKeane.aux)
 \openout1 = `ImaiKeane.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -829,7 +830,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring ON on input line 29.
+Package hyperref Info: Link coloring ON on input line 30.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -842,9 +843,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count332
 )
-LaTeX Info: Redefining \ref on input line 29.
-LaTeX Info: Redefining \pageref on input line 29.
-LaTeX Info: Redefining \nameref on input line 29.
+LaTeX Info: Redefining \ref on input line 30.
+LaTeX Info: Redefining \pageref on input line 30.
+LaTeX Info: Redefining \nameref on input line 30.
 
 (LaTeX/ImaiKeane.out) (LaTeX/ImaiKeane.out)
 \@outlinefile=\write4
@@ -852,318 +853,110 @@ LaTeX Info: Redefining \nameref on input line 29.
 
 LaTeX Info: Completed page discarded.
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
- 33.
+ 34.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
- 33.
+ 34.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
- 33.
+ 34.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
- 33.
+ 34.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 3
-3.
+4.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 33.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 34.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 33.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 34.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 33.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 34.
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 3
-3.
+4.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 33.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 34.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 33.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 34.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 33.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 34.
 
-Overfull \hbox (55.93904pt too wide) in paragraph at lines 33--33
+Overfull \hbox (55.93904pt too wide) in paragraph at lines 34--34
  [][] 
  []
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 33.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 34.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 33.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 34.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 33.
-(./Abstract.tex) (./Sections/Section1.tex
-
-Package natbib Warning: Citation `Lucas1969-ti' on page 2 undefined on input li
-ne 9.
-
-
-Package natbib Warning: Citation `MaCurdy1981-iy' on page 2 undefined on input 
-line 9.
-
-
-Package natbib Warning: Citation `Browning1985-ox' on page 2 undefined on input
- line 9.
-
-
-Package natbib Warning: Citation `Altonji1986-zf' on page 2 undefined on input 
-line 9.
-
-
-Package natbib Warning: Citation `Heckman1976-lc' on page 2 undefined on input 
-line 10.
-
-[2{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-(./Sections/../FigDir/Figure1.tex)
-
-Package natbib Warning: Citation `MaCurdy1981-iy' on page 3 undefined on input 
-line 13.
-
-
-Package natbib Warning: Citation `Altonji1986-zf' on page 3 undefined on input 
-line 13.
-
-
-Package natbib Warning: Citation `MaCurdy1981-iy' on page 3 undefined on input 
-line 13.
-
-
-Package natbib Warning: Citation `Altonji1986-zf' on page 3 undefined on input 
-line 13.
-
-[3]
-
-Package natbib Warning: Citation `MaCurdy1981-iy' on page 4 undefined on input 
-line 15.
-
-
-Package natbib Warning: Citation `Altonji1986-zf' on page 4 undefined on input 
-line 15.
-
-
-Package natbib Warning: Citation `Cooper1999-af' on page 4 undefined on input l
-ine 15.
-
-
-Package natbib Warning: Citation `Chang2002-zs' on page 4 undefined on input li
-ne 15.
-
-
-Package natbib Warning: Citation `Cooper1999-af' on page 4 undefined on input l
-ine 15.
-
-
-Package natbib Warning: Citation `Chang2002-zs' on page 4 undefined on input li
-ne 15.
-
-
-Package natbib Warning: Citation `Chang2002-zs' on page 4 undefined on input li
-ne 15.
-
-
-Package natbib Warning: Citation `Heckman1976-lb' on page 4 undefined on input 
-line 16.
-
-
-Package natbib Warning: Citation `Heckman1976-lc' on page 4 undefined on input 
-line 16.
-
-
-Package natbib Warning: Citation `Ben-Porath1967-sf' on page 4 undefined on inp
-ut line 16.
-
-
-Package natbib Warning: Citation `Blinder1976-dv' on page 4 undefined on input 
-line 16.
-
-
-Package natbib Warning: Citation `Shaw1989-jb' on page 4 undefined on input lin
-e 16.
-
-
-Package natbib Warning: Citation `Shaw1989-jb' on page 4 undefined on input lin
-e 16.
-
-
-Package natbib Warning: Citation `Altug1998-ou' on page 4 undefined on input li
-ne 16.
-
-
-Package natbib Warning: Citation `Eckstein1989-ji' on page 4 undefined on input
- line 17.
-
-
-Package natbib Warning: Citation `Keane2001-yk' on page 4 undefined on input li
-ne 17.
-
-
-Package natbib Warning: Citation `Geweke2001-px' on page 4 undefined on input l
-ine 18.
-
-
-Package natbib Warning: Citation `Keane1994-sm' on page 4 undefined on input li
-ne 18.
-
-[4]) (./Sections/Section2.tex [5pdfTeX warning (ext4): destination with the sam
-e identifier (name{equation.2.1}) has been already used, duplicate ignored
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 34.
+(./Abstract.tex) (./Sections/Section1.tex [2{/var/lib/texmf/fonts/map/pdftex/up
+dmap/pdftex.map}] (./Sections/../FigDir/Figure1.tex) [3] [4])
+(./Sections/Section2.tex (./Sections/../Equations/lifecycleutility.tex)
+[5] (./Sections/../Equations/IBC.tex) [6pdfTeX warning (ext4): destination with
+ the same identifier (name{equation.2.1}) has been already used, duplicate igno
+red
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.24 \begin{equation}
-                      \tag{3}]pdfTeX warning (ext4): destination with the same 
-identifier (name{equation.2.1}) has been already used, duplicate ignored
+l.53 \end{equation}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{equation.2.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.53 \end{equation}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{equation.2.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.53 \end{equation}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{equation.2.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.53 \end{equation}
+                   ]pdfTeX warning (ext4): destination with the same identifier
+ (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.24 \begin{equation}
-                      \tag{3}pdfTeX warning (ext4): destination with the same i
-dentifier (name{equation.2.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.24 \begin{equation}
-                      \tag{3}pdfTeX warning (ext4): destination with the same i
-dentifier (name{equation.2.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.24 \begin{equation}
-                      \tag{3}pdfTeX warning (ext4): destination with the same i
-dentifier (name{equation.2.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.24 \begin{equation}
-                      \tag{3}pdfTeX warning (ext4): destination with the same i
-dentifier (name{equation.2.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.29 \begin{equation}
-                      \tag{4}pdfTeX warning (ext4): destination with the same i
-dentifier (name{equation.2.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.29 \begin{equation}
-                      \tag{4}pdfTeX warning (ext4): destination with the same i
-dentifier (name{equation.2.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.29 \begin{equation}
-                      \tag{4}pdfTeX warning (ext4): destination with the same i
-dentifier (name{equation.2.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.29 \begin{equation}
-                      \tag{4}pdfTeX warning (ext4): destination with the same i
-dentifier (name{equation.2.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.35 \begin{equation}
-                      \tag{5}pdfTeX warning (ext4): destination with the same i
-dentifier (name{equation.2.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.35 \begin{equation}
-                      \tag{5}pdfTeX warning (ext4): destination with the same i
-dentifier (name{equation.2.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.35 \begin{equation}
-                      \tag{5}pdfTeX warning (ext4): destination with the same i
-dentifier (name{equation.2.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.35 \begin{equation}
-                      \tag{5}
-
-Package natbib Warning: Citation `Keane2001-yk' on page 6 undefined on input li
-ne 45.
-
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.47 \begin{equation}
-                      \tag{6}pdfTeX warning (ext4): destination with the same i
-dentifier (name{equation.2.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.47 \begin{equation}
-                      \tag{6}pdfTeX warning (ext4): destination with the same i
-dentifier (name{equation.2.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.47 \begin{equation}
-                      \tag{6}pdfTeX warning (ext4): destination with the same i
-dentifier (name{equation.2.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.47 \begin{equation}
-                      \tag{6}
-
-Package natbib Warning: Citation `MaCurdy1981-iy' on page 6 undefined on input 
-line 50.
-
-
-Package natbib Warning: Citation `Altonji1986-zf' on page 6 undefined on input 
-line 50.
-
-
-Package natbib Warning: Citation `MaCurdy1981-iy' on page 6 undefined on input 
-line 50.
-
-
-Package natbib Warning: Citation `Altonji1986-zf' on page 6 undefined on input 
-line 50.
-
-[6]
-
-Package natbib Warning: Citation `Shaw1989-jb' on page 7 undefined on input lin
-e 54.
-
-
-Package natbib Warning: Citation `Hotz1988-gl' on page 7 undefined on input lin
-e 54.
-
-
-Package natbib Warning: Citation `Shaw1989-jb' on page 7 undefined on input lin
-e 54.
-
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.56 \begin{equation}
+l.60 \begin{equation}
                       \tag{4a}pdfTeX warning (ext4): destination with the same 
 identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.56 \begin{equation}
+l.60 \begin{equation}
                       \tag{4a}pdfTeX warning (ext4): destination with the same 
 identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.56 \begin{equation}
+l.60 \begin{equation}
                       \tag{4a}pdfTeX warning (ext4): destination with the same 
 identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.56 \begin{equation}
+l.60 \begin{equation}
                       \tag{4a} (./FigDir/Figure2.tex
-<./FigDir/Figure2.png, id=89, 469.755pt x 313.9228pt>
+<./FigDir/Figure2.png, id=176, 469.755pt x 313.9228pt>
 File: ./FigDir/Figure2.png Graphic file (type png)
 <use ./FigDir/Figure2.png>
 Package pdftex.def Info: ./FigDir/Figure2.png  used on input line 4.
@@ -1172,104 +965,107 @@ Package pdftex.def Info: ./FigDir/Figure2.png  used on input line 4.
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.63   \begin{equation}
+l.67   \begin{equation}
                         \tag{4b}pdfTeX warning (ext4): destination with the sam
 e identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.63   \begin{equation}
+l.67   \begin{equation}
                         \tag{4b}pdfTeX warning (ext4): destination with the sam
 e identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.63   \begin{equation}
+l.67   \begin{equation}
                         \tag{4b}pdfTeX warning (ext4): destination with the sam
 e identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.63   \begin{equation}
-                        \tag{4b} [7]
-
-Package natbib Warning: Citation `Keane1997-mg' on page 8 undefined on input li
-ne 72.
-
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.73   \begin{equation}
-                        \tag{7}pdfTeX warning (ext4): destination with the same
- identifier (name{equation.2.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.73   \begin{equation}
-                        \tag{7}pdfTeX warning (ext4): destination with the same
- identifier (name{equation.2.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.73   \begin{equation}
-                        \tag{7}pdfTeX warning (ext4): destination with the same
- identifier (name{equation.2.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.73   \begin{equation}
-                        \tag{7}pdfTeX warning (ext4): destination with the same
- identifier (name{equation.2.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.78 \begin{equation}
-                      \tag{8}pdfTeX warning (ext4): destination with the same i
-dentifier (name{equation.2.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.78 \begin{equation}
-                      \tag{8}pdfTeX warning (ext4): destination with the same i
-dentifier (name{equation.2.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.78 \begin{equation}
-                      \tag{8}pdfTeX warning (ext4): destination with the same i
-dentifier (name{equation.2.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.78 \begin{equation}
-                      \tag{8} [8 <./FigDir/Figure2.png>]pdfTeX warning (ext4): 
-destination with the same identifier (name{equation.2.1}) has been already used
-, duplicate ignored
-<to be read again> 
-                   \relax 
-l.111          \begin{equation}
-                                \tag{9}pdfTeX warning (ext4): destination with 
-the same identifier (name{equation.2.1}) has been already used, duplicate ignor
-ed
-<to be read again> 
-                   \relax 
-l.111          \begin{equation}
-                                \tag{9}pdfTeX warning (ext4): destination with 
-the same identifier (name{equation.2.1}) has been already used, duplicate ignor
-ed
-<to be read again> 
-                   \relax 
-l.111          \begin{equation}
-                                \tag{9}pdfTeX warning (ext4): destination with 
-the same identifier (name{equation.2.1}) has been already used, duplicate ignor
-ed
-<to be read again> 
-                   \relax 
-l.111          \begin{equation}
-                                \tag{9} [9]) (./Sections/Section3.tex [10pdfTeX
- warning (ext4): destination with the same identifier (name{equation.3.1}) has 
-been already used, duplicate ignored
+l.67   \begin{equation}
+                        \tag{4b} [7pdfTeX warning (ext4): destination with the 
+same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.47 \begin{equation*}
-                      pdfTeX warning (ext4): destination with the same identifi
-er (name{equation.3.1}) has been already used, duplicate ignored
+l.73   \item T
+              he derivative of the human capital production function with re...
+]pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.77   \begin{equation}
+                        \tag{7}pdfTeX warning (ext4): destination with the same
+ identifier (name{equation.2.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.77   \begin{equation}
+                        \tag{7}pdfTeX warning (ext4): destination with the same
+ identifier (name{equation.2.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.77   \begin{equation}
+                        \tag{7}pdfTeX warning (ext4): destination with the same
+ identifier (name{equation.2.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.77   \begin{equation}
+                        \tag{7} [8 <./FigDir/Figure2.png>]pdfTeX warning (ext4)
+: destination with the same identifier (name{equation.2.1}) has been already us
+ed, duplicate ignored
+<to be read again> 
+                   \relax 
+l.82 \begin{equation}
+                      \tag{8}pdfTeX warning (ext4): destination with the same i
+dentifier (name{equation.2.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.82 \begin{equation}
+                      \tag{8}pdfTeX warning (ext4): destination with the same i
+dentifier (name{equation.2.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.82 \begin{equation}
+                      \tag{8}pdfTeX warning (ext4): destination with the same i
+dentifier (name{equation.2.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.82 \begin{equation}
+                      \tag{8}pdfTeX warning (ext4): destination with the same i
+dentifier (name{equation.2.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.115          \begin{equation}
+                                \tag{9}pdfTeX warning (ext4): destination with 
+the same identifier (name{equation.2.1}) has been already used, duplicate ignor
+ed
+<to be read again> 
+                   \relax 
+l.115          \begin{equation}
+                                \tag{9}pdfTeX warning (ext4): destination with 
+the same identifier (name{equation.2.1}) has been already used, duplicate ignor
+ed
+<to be read again> 
+                   \relax 
+l.115          \begin{equation}
+                                \tag{9}pdfTeX warning (ext4): destination with 
+the same identifier (name{equation.2.1}) has been already used, duplicate ignor
+ed
+<to be read again> 
+                   \relax 
+l.115          \begin{equation}
+                                \tag{9} [9]) (./Sections/Section3.tex
+(./Sections/../Equations/IBC.tex) (./Sections/../Equations/HCprodfunc.tex)
+(./Sections/../Equations/emax.tex) [10pdfTeX warning (ext4): destination with t
+he same identifier (name{equation.3.1}) has been already used, duplicate ignore
+d
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.47 \begin{equation*}
-                      ]
-Overfull \hbox (5.10477pt too wide) in paragraph at lines 49--50
+l.39 \end{equation*}
+                    pdfTeX warning (ext4): destination with the same identifier
+ (name{equation.3.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.39 \end{equation*}
+                    ] (./Sections/../Equations/valuenoshocks.tex)
+Overfull \hbox (5.10477pt too wide) in paragraph at lines 50--51
 \OML/ztmcm/m/it/12 V[]\OT1/ztmcm/m/n/12 (\OML/ztmcm/m/it/12 A[]; []\OT1/ztmcm/m
 /n/12 )$\T1/ptm/m/n/12 . Given the state space point, $\OT1/ztmcm/m/n/12 (\OML/
 ztmcm/m/it/12 A[]; []\OT1/ztmcm/m/n/12 )$\T1/ptm/m/n/12 , we need to de-rive th
@@ -1277,55 +1073,10 @@ e in-te-gral of $\OML/ztmcm/m/it/12 V[]\OT1/ztmcm/m/n/12 (\OML/ztmcm/m/it/12 A[
 ]; []; ^^O[]; ^^O[]\OT1/ztmcm/m/n/12 )$
  []
 
-) (./Sections/Section4.tex [11] [12]) (./Sections/Section5.tex
-
-Package natbib Warning: Citation `MaCurdy1981-iy' on page 13 undefined on input
- line 8.
-
-
-Package natbib Warning: Citation `Altonji1986-zf' on page 13 undefined on input
- line 8.
-
-
-Package natbib Warning: Citation `Shaw1989-jb' on page 13 undefined on input li
-ne 8.
-
-[13]
-
-Package natbib Warning: Citation `MaCurdy1981-iy' on page 14 undefined on input
- line 9.
-
-
-Package natbib Warning: Citation `Altonji1986-zf' on page 14 undefined on input
- line 9.
-
-
-Package natbib Warning: Citation `Shaw1989-jb' on page 14 undefined on input li
-ne 9.
-
-
-Package natbib Warning: Citation `Keane2001-yk' on page 14 undefined on input l
-ine 9.
-
-(./Sections/../Tables/Table1.tex)
-
-Package natbib Warning: Citation `Keane2001-yk' on page 14 undefined on input l
-ine 12.
-
-[14] [15] (./Sections/../Tables/Table2.tex) (./Sections/../Tables/Table3.tex)
-[16]) (./Sections/Section6.tex (./Sections/../Tables/Table4.tex [17] [18])
-
-Package natbib Warning: Citation `Eichenbaum1988-kg' on page 19 undefined on in
-put line 11.
-
-
-Package natbib Warning: Citation `Prescott1986-vn' on page 19 undefined on inpu
-t line 11.
-
-
-Package natbib Warning: Citation `Hubbard1994-qp' on page 19 undefined on input
- line 14.
-
+) [11] (./Sections/Section4.tex [12]) (./Sections/Section5.tex [13]
+(./Sections/../Tables/Table1.tex) [14] [15] (./Sections/../Tables/Table2.tex)
+(./Sections/../Tables/Table3.tex) [16]) (./Sections/Section6.tex
+(./Sections/../Tables/Table4.tex [17] [18])
 
 Package natbib Warning: Citation `Keane2001-yk' on page 19 undefined on input l
 ine 14.
@@ -1333,13 +1084,9 @@ ine 14.
 
 Package natbib Warning: Citation `Keane2001-yk' on page 19 undefined on input l
 ine 14.
-
-
-Package natbib Warning: Citation `Goeree2000-la' on page 19 undefined on input 
-line 14.
 
 (./Sections/../FigDir/Figure3.tex
-<./FigDir/Figure3.png, id=196, 469.755pt x 304.88907pt>
+<./FigDir/Figure3.png, id=313, 469.755pt x 304.88907pt>
 File: ./FigDir/Figure3.png Graphic file (type png)
 <use ./FigDir/Figure3.png>
 Package pdftex.def Info: ./FigDir/Figure3.png  used on input line 3.
@@ -1349,48 +1096,35 @@ Package pdftex.def Info: ./FigDir/Figure3.png  used on input line 3.
 LaTeX Warning: Float too large for page by 81.22481pt on input line 68.
 
 ) (./Sections/../FigDir/Figure4.tex
-<./FigDir/Figure4.png, id=209, 469.755pt x 307.1475pt>
+<./FigDir/Figure4.png, id=330, 469.755pt x 307.1475pt>
 File: ./FigDir/Figure4.png Graphic file (type png)
 <use ./FigDir/Figure4.png>
 Package pdftex.def Info: ./FigDir/Figure4.png  used on input line 3.
 (pdftex.def)             Requested size: 433.62pt x 283.52115pt.
 ) (./Sections/../FigDir/Figure5.tex
-<./FigDir/Figure5.png, id=210, 469.755pt x 321.45094pt>
+<./FigDir/Figure5.png, id=331, 469.755pt x 321.45094pt>
 File: ./FigDir/Figure5.png Graphic file (type png)
 <use ./FigDir/Figure5.png>
 Package pdftex.def Info: ./FigDir/Figure5.png  used on input line 3.
 (pdftex.def)             Requested size: 433.62pt x 296.72433pt.
 )
-
-Package natbib Warning: Citation `Keane2001-yk' on page 20 undefined on input l
-ine 21.
-
-
-Package natbib Warning: Citation `Carroll1996-yj' on page 20 undefined on input
- line 21.
-
 [20 <./FigDir/Figure3.png>] [21] [22 <./FigDir/Figure4.png> <./FigDir/Figure5.p
-ng>]
-
-Package natbib Warning: Citation `MaCurdy1981-iy' on page 23 undefined on input
- line 28.
-
-(./Sections/../Tables/Table6.tex) (./Sections/../Tables/Table7.tex
-<./Tables/Table7.png, id=240, 469.755pt x 439.6425pt>
+ng>] (./Sections/../Tables/Table6.tex) (./Sections/../Tables/Table7.tex
+<./Tables/Table7.png, id=368, 469.755pt x 439.6425pt>
 File: ./Tables/Table7.png Graphic file (type png)
 <use ./Tables/Table7.png>
 Package pdftex.def Info: ./Tables/Table7.png  used on input line 4.
 (pdftex.def)             Requested size: 289.07999pt x 270.54959pt.
 )
 (./Sections/../Tables/Table8.tex
-<./Tables/Table8.png, id=243, 469.755pt x 382.42876pt>
+<./Tables/Table8.png, id=371, 469.755pt x 382.42876pt>
 File: ./Tables/Table8.png Graphic file (type png)
 <use ./Tables/Table8.png>
 Package pdftex.def Info: ./Tables/Table8.png  used on input line 3.
 (pdftex.def)             Requested size: 433.62pt x 353.01163pt.
 ) [23] [24 <./Tables/Table7.png>] [25 <./Tables/Table8.png>] (./Sections/../Tab
 les/Table9pt1.tex
-<./Tables/Table9pt1.png, id=274, 378.66469pt x 650.43pt>
+<./Tables/Table9pt1.png, id=402, 378.66469pt x 650.43pt>
 File: ./Tables/Table9pt1.png Graphic file (type png)
 <use ./Tables/Table9pt1.png>
 Package pdftex.def Info: ./Tables/Table9pt1.png  used on input line 3.
@@ -1400,21 +1134,21 @@ Package pdftex.def Info: ./Tables/Table9pt1.png  used on input line 3.
 LaTeX Warning: Float too large for page by 117.40257pt on input line 6.
 
 ) (./Sections/../Tables/Table9pt2.tex
-<./Tables/Table9pt2.png, id=275, 460.72125pt x 650.43pt>
+<./Tables/Table9pt2.png, id=403, 460.72125pt x 650.43pt>
 File: ./Tables/Table9pt2.png Graphic file (type png)
 <use ./Tables/Table9pt2.png>
 Package pdftex.def Info: ./Tables/Table9pt2.png  used on input line 3.
 (pdftex.def)             Requested size: 433.62pt x 612.16849pt.
 ) [26] [27 <./Tables/Table9pt1.png>]
 [28 <./Tables/Table9pt2.png>] (./Sections/../Tables/Table10.tex
-<./Tables/Table10.png, id=298, 469.755pt x 544.28343pt>
+<./Tables/Table10.png, id=426, 469.755pt x 544.28343pt>
 File: ./Tables/Table10.png Graphic file (type png)
 <use ./Tables/Table10.png>
 Package pdftex.def Info: ./Tables/Table10.png  used on input line 3.
 (pdftex.def)             Requested size: 433.62pt x 502.41615pt.
 )
 (./Sections/../FigDir/Figure6.tex
-<./FigDir/Figure6.png, id=299, 469.755pt x 313.9228pt>
+<./FigDir/Figure6.png, id=427, 469.755pt x 313.9228pt>
 File: ./FigDir/Figure6.png Graphic file (type png)
 <use ./FigDir/Figure6.png>
 Package pdftex.def Info: ./FigDir/Figure6.png  used on input line 3.
@@ -1425,29 +1159,20 @@ dMRS}) has been already used, duplicate ignored
                                                   \__shipout_drop_firstpage_...
 l.61           \end{equation*}
                                <./FigDir/Figure6.png>] [30 <./Tables/Table10.pn
-g>]
-
-Package natbib Warning: Citation `Altonji1986-zf' on page 31 undefined on input
- line 67.
-
-(./Sections/../FigDir/Figure7.tex
-<./FigDir/Figure7.png, id=316, 469.755pt x 300.3722pt>
+g>] (./Sections/../FigDir/Figure7.tex
+<./FigDir/Figure7.png, id=446, 469.755pt x 300.3722pt>
 File: ./FigDir/Figure7.png Graphic file (type png)
 <use ./FigDir/Figure7.png>
 Package pdftex.def Info: ./FigDir/Figure7.png  used on input line 3.
 (pdftex.def)             Requested size: 433.62pt x 277.267pt.
 ) (./Sections/../FigDir/Figure8.tex
-<./FigDir/Figure8.png, id=317, 469.755pt x 311.66437pt>
+<./FigDir/Figure8.png, id=447, 469.755pt x 311.66437pt>
 File: ./FigDir/Figure8.png Graphic file (type png)
 <use ./FigDir/Figure8.png>
 Package pdftex.def Info: ./FigDir/Figure8.png  used on input line 3.
 (pdftex.def)             Requested size: 433.62pt x 287.69057pt.
-)
-
-Package natbib Warning: Citation `Shaw1989-jb' on page 31 undefined on input li
-ne 72.
-
-) [31] [32 <./FigDir/Figure7.png> <./FigDir/Figure8.png>]
+))
+[31] [32 <./FigDir/Figure7.png> <./FigDir/Figure8.png>]
 (./Sections/Section7.tex) [33] (./Appendices/AppendixA1.tex [34] [35])
 (./Appendices/AppendixA2.tex [36]
 Overfull \hbox (42.76254pt too wide) in paragraph at lines 45--46
@@ -1464,25 +1189,68 @@ o-tal amount of debts on farm/business/other
  []
 
 ) (LaTeX/ImaiKeane.bbl
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
+6.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+) [39]
+Underfull \hbox (badness 4569) in paragraph at lines 108--113
+[]\T1/ptm/m/n/12 J Go-eree, C Holt, and T Pal-frey.  Risk Averse Be-hav-ior in 
+Asym-met-ric Match-
+ []
 
-Package natbib Warning: Empty `thebibliography' environment on input line 8.
 
-)
+Underfull \hbox (badness 5802) in paragraph at lines 108--113
+\T1/ptm/m/n/12 ing Pen-nies Games.  2000.  URL [][]$\T1/cmtt/m/n/12 https : / /
+ www . semanticscholar . org / paper /
+ []
+
+
+Underfull \hbox (badness 6910) in paragraph at lines 123--130
+[]\T1/ptm/m/n/12 James J Heck-man.  Es-ti-mates of a Hu-man Cap-i-tal Pro-duc-t
+ion Func-tion Em-bed-
+ []
+
+
+Underfull \hbox (badness 7869) in paragraph at lines 123--130
+\T1/ptm/m/n/12 ded in a Life-Cycle Model of La-bor Sup-ply.  Tech-ni-cal Re-por
+t c3963, Na-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--130
+\T1/ptm/m/n/12 tional Bu-reau of Eco-nomic Re-search, Jan-uary 1976b.  URL [][]
+$\T1/cmtt/m/n/12 https : / / www .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--130
+\T1/cmtt/m/n/12 nber . org / books-[]and-[]chapters / household-[]production-[]
+and-[]consumption /
+ []
+
+
+Overfull \hbox (56.47136pt too wide) in paragraph at lines 123--130
+\T1/cmtt/m/n/12 estimates-[]human-[]capital-[]production-[]function-[]embedded-
+[]life-[]cycle-[]model-[]labor-[]supply$[][]\T1/ptm/m/n/12 . 
+ []
+
+[40])
 
 Package natbib Warning: There were undefined citations.
 
-[39] (LaTeX/ImaiKeane.aux)
+[41] (LaTeX/ImaiKeane.aux)
 Package rerunfilecheck Info: File `ImaiKeane.out' has not changed.
 (rerunfilecheck)             Checksum: 4996C8E0060B8C75E62C53A0D4AD3C85;1334.
  ) 
 Here is how much of TeX's memory you used:
- 24286 strings out of 478287
- 456676 string characters out of 5849289
- 786776 words of memory out of 5000000
- 41797 multiletter control sequences out of 15000+600000
- 552108 words of font info for 156 fonts, out of 8000000 for 9000
+ 24434 strings out of 478287
+ 460270 string characters out of 5849289
+ 788132 words of memory out of 5000000
+ 41899 multiletter control sequences out of 15000+600000
+ 549618 words of font info for 155 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 105i,20n,107p,2487b,790s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 105i,20n,107p,2486b,790s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.14} has been referenced but does not ex
 ist, replaced by a fixed one
 
@@ -1498,19 +1266,20 @@ t, replaced by a fixed one
 pdfTeX warning (dest): name{Hfootnote.10} has been referenced but does not exis
 t, replaced by a fixed one
 
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
-w/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/urw/times/utmri8a.pfb>
-Output written on LaTeX/ImaiKeane.pdf (38 pages, 871338 bytes).
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texlive/
+texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
+utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on LaTeX/ImaiKeane.pdf (40 pages, 917402 bytes).
 PDF statistics:
- 438 PDF objects out of 1000 (max. 8388607)
- 352 compressed objects within 4 object streams
- 123 named destinations out of 1000 (max. 500000)
+ 626 PDF objects out of 1000 (max. 8388607)
+ 534 compressed objects within 6 object streams
+ 148 named destinations out of 1000 (max. 500000)
  129 words of extra memory for PDF output out of 10000 (max. 10000000)
 
