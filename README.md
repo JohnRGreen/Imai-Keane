@@ -1,6 +1,6 @@
 # Computational Methods Semester Project
 
-This GitHub repository implements a reproduction of the 2004 paper by Susumu Imai and Michael P. Keane, " Intertemporal Labor Supply and Human Capital Accumulation." This is my semester project for Chris Carroll's course in [computational methods](https://link-url-here.org), and uses a simplified version of the architecture used in Carroll's [Buffer Stock Theory](https://github.com/econ-ark/BufferStockTheory) project.  For now this is just a reproduction, but the goal is ultimately to turn this into a full replication of the paper.
+This GitHub repository implements a reproduction of the 2004 paper by Susumu Imai and Michael P. Keane, " Intertemporal Labor Supply and Human Capital Accumulation." This is my semester project for Chris Carroll's course in [computational methods](https://github.com/ccarrollATjhuecon/Methods), and uses a simplified version of the architecture used in Carroll's [Buffer Stock Theory](https://github.com/econ-ark/BufferStockTheory) project.  For now this is just a reproduction, but the goal is ultimately to turn this into a full replication of the paper.
 
 ## Requirements
 - Ubuntu 22.04
