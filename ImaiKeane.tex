@@ -2,13 +2,16 @@
 
 % load in all the packages I will need to use
 \input{packages}
-
+\input{./econtexRoot}
 % For some reason generating a blank first page, which I would like to remove:
 \AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
 
 % format the title
 \titleformat{\section}[block]{\normalsize\bfseries\filcenter}{\thetitle.\quad}{.2em}{}
 \captionsetup[table]{labelsep=space}
+
+% make citations use () instead of []
+\setcitestyle{round}
 
 % He has the abstract with no title and centered
 \renewcommand{\abstractname}{}    % clear the title
@@ -34,40 +37,39 @@
 \end{abstract}
 \end{adjustwidth}
 \hspace{0.5cm}
+
 % intro
-\subfile{./Sections/Section1.tex}
+\subfile{\SectionDir/Section1}
 
 %model
-\subfile{./Sections/Section2.tex}
+\subfile{\SectionDir/Section2}
 
 % solving
-\subfile{./Sections/Section3.tex}
+\subfile{\SectionDir/Section3}
 
 % MLE
-\subfile{./Sections/Section4.tex}
+\subfile{\SectionDir/Section4}
 
 % data
-\subfile{./Sections/Section5.tex}
+\subfile{\SectionDir/Section5}
 
 % estimation
-\subfile{./Sections/Section6.tex}
+\subfile{\SectionDir/Section6}
 
 % conclusions
-\subfile{./Sections/Section7.tex}
+\subfile{\SectionDir/Section7}
 
 \appendix
-%\hyperref{appendix}
 \label{appendix}
 \section*{APPENDIX}
-\cite{MaCurdy1981-iy}
-\subfile{./Appendices/AppendixA1.tex}
+\subfile{\AppDir/AppendixA1}
 \section*{ }
-\subfile{./Appendices/AppendixA2.tex}
+\subfile{\AppDir/AppendixA2}
 \section*{ }
-\subfile{./Appendices/AppendixA3.tex}
+\subfile{\AppDir/AppendixA3}
 
 \bibliographystyle{plainnat}
-\bibliography{./KeaneImai.bib}
-\nocite{*}
+\bibliography{./ImaiKeane.bib}
+\nocite{*} % so that all the sources show up
 
 \end{document}

@@ -1,0 +1,24 @@
+
+
+% This sets up a Boolean variable which will allow us to display the TOC at the beginning of each section, with the specific section in bold, while omitting this step when we want to. 
+
+
+\RequirePackage{ifthen} % package required
+\newboolean{sectiontoc}
+\setboolean{sectiontoc}{true} % default to true
+
+\AtBeginSection[]
+{
+  \ifthenelse{\boolean{sectiontoc}}{
+    \begin{frame}
+      \frametitle{Table of Contents}
+      \tableofcontents[currentsection]
+    \end{frame}
+  }
+}
+
+\newcommand{\toclesssection}[1]{
+  \setboolean{sectiontoc}{false}
+  \section{#1}
+  \setboolean{sectiontoc}{true}
+}
