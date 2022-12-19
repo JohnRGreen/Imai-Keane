@@ -12,18 +12,22 @@ At a given calendar time period $s$ and age $t$, the agent's period utility of c
 utility over the working horizon $T$, which is
 
 \begin{equation} \tag{1}
-E_t \sum_{\tau=t}^T \beta^{\tau} [u(C_{\tau} , \tau) - v(h_{\tau} \epsilon_{2,\tau})]
+\label{eq:LCU}
+\input{../Equations/lifecycleutility.tex}
 \end{equation}
 
 Agents also face an intertemporal budget constraint and a human capital production constraint. \par
 The intertemporal budget constraint is
 \begin{equation} \tag{2}
-A_{t+1} = (1 + r)A_t + W_{t,s}h_t - C_t
+  \label{eq:IBC}
+\input{../Equations/IBC.tex}
 \end{equation}
+
 where $A_t$ is the agent's asset holdings at age $t$ and $r$ is the interest rate. The observed wage $W_{t,s}$ at age $t$, time $s$ is defined as the product of the human capital stock $K_t$ times the rental rate on a unit of human capital, $R_s$
 \begin{equation} \tag{3}
 W_{t,s}=R_sK_t
 \end{equation}
+
 The rental rate $R_s$ is the market price of services of a unit of human capital. We assume a perfect market for human capital. Hence, at any time $s$, all agents face the same rental rate $R_s$. \par
 Human capital evolves according to the human capital production function, which is a deterministic function of current labor supply hours $h_t$, current human capital $K_t$, and age $t$, along with the multiplicative wage shock, $\epsilon_t$. That is,
 \begin{equation} \tag{4}

@@ -13,11 +13,11 @@ As discussed before, the problem agents solve in each period is as follows:
 subject to the intertemporal budget constraint
 \begin{equation} \tag{2}
   \label{eq:bc}
-  A_{T_1}=(1+r)A_t + W_{t,s} h_t - C_t
+ \input{../Equations/IBC.tex}
 \end{equation}
 and human capital production function
 \begin{equation} \tag{4}
-  K_{t+1} = g(h_t, K_t, t) \epsilon_{1,t+1}
+\input{../Equations/HCprodfunc.tex}
 \end{equation}
 where $\epsilon_{1,t+1}$ is the human capital shock realized at age $t+1$.\par
 Notice that the next period's human capital $K_{t+1}$ is not known to the individual at age $t$. Let us rewrite the Bellman equation in terms of variables that the agent knows at age $t$. Define $\tilde{K}_{t+1}$ to be the next period human capital before the human capital shock is realized. That is,
@@ -33,13 +33,14 @@ Define the value function in terms of $ \tilde{K}_t$ as follows:
       V_{t,s}(A_t,\tilde{K}_t,\epsilon_{1,t},\epsilon_{2,t})=\text{max}_{C_t,h_t} & (u(C_t,t)-v(h_t, \epsilon_{2,t}) \\ & + \beta E_t V_{t+1,s+1} (A_{t+1},\tilde{K}_{t+1},\epsilon_{1,t+1},\epsilon_{2,t+1}))
   \end{split}
 \end{equation*}
-Also, define the emax function $V^E$ as follows''
+Also, define the emax function $V^E$ as follows:
 \begin{equation*}
-V^E_{t+1,s+1}(A_{t+1},\tilde{K}_{t+1}) = E_t V_{t+1,s+1}(A_{t+1},\tilde{K}_{t+1},\epsilon_{1,t+1},\epsilon_{2,t+1}) 
+\input{../Equations/emax.tex}
 \end{equation*}
 Then, the above problem can be rewritten as follows:
 \begin{equation*}
-V_{t,s}(A_t, \tilde{K}_t,\epsilon_{1,t},\epsilon_{2,t}) = \text{max}_{C_t, h_t} [u(C_t,t) - v(h_t, \epsilon_{2,t}) + \beta V^E_{t+1,s+1} (A_{t+1},\tilde{K}_{t+1})]
+  \label{eq:valuenoshocks}
+  \input{../Equations/valuenoshocks.tex}
 \end{equation*}
 subject to the intertemporal budget constraint \eqref{eq:bc}, and human capital production function $\tilde{K}_{t+1}=g(h_t,K_t,t)$ where $K_t=\tilde{K}_t \epsilon_{1,t}$.\par
 There are several computational obstacles to solving the continuous stochastic dynamic programming problem that we assume the agents are facing. In order to numerically solve the above problem, in general, we have to start at the terminal period, $T$, and backsolve to $t = t_0$, where $t_0$ is the start of the planning period (assumed to be age 20).\par

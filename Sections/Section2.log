@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.21)  15 DEC 2022 11:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.21)  19 DEC 2022 11:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -637,6 +637,7 @@ File: puenc.def 2022-11-13 v7.00u Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
+Package hyperref Info: Option `colorlinks' set `true' on input line 4045.
 Package hyperref Info: Hyper figures OFF on input line 4162.
 Package hyperref Info: Link nesting OFF on input line 4167.
 Package hyperref Info: Hyper index ON on input line 4170.
@@ -667,7 +668,7 @@ Package hyperref Info: Hyper figures OFF on input line 6027.
 Package hyperref Info: Link nesting OFF on input line 6032.
 Package hyperref Info: Hyper index ON on input line 6035.
 Package hyperref Info: backreferencing OFF on input line 6042.
-Package hyperref Info: Link coloring OFF on input line 6047.
+Package hyperref Info: Link coloring ON on input line 6045.
 Package hyperref Info: Link coloring with OCG OFF on input line 6052.
 Package hyperref Info: PDF/A mode OFF on input line 6057.
 
@@ -742,28 +743,281 @@ Package: abstract 2009/06/08 v1.2a configurable abstracts
 \absparindent=\skip80
 \absparsep=\skip81
 ))
-(../econtexRoot.tex
+(c:/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-10-26 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count326
+\l__pdf_internal_box=\box72
+)
+(./Section2.aux)
+\openout1 = `Section2.aux'.
 
-! LaTeX Error: File `./econtexPaths.tex' not found.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=469.75502pt
+* \textheight=650.43001pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: changepage package is loaded.
+\caption@adjustwidth@hsize=\dimen304
+\caption@adjustwidth@linewidth=\dimen305
+Package caption Info: hyperref package is loaded.
+Package caption Info: longtable package is loaded.
+(c:/texlive/2022/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
+)
+Package caption Info: End \AtBeginDocument code.
+
+(c:/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count327
+\scratchdimen=\dimen306
+\scratchbox=\box73
+\nofMPsegments=\count328
+\nofMParguments=\count329
+\everyMPshowfont=\toks41
+\MPscratchCnt=\count330
+\MPscratchDim=\dimen307
+\MPnumerator=\count331
+\makeMPintoPDFobject=\count332
+\everyMPtoPDFconversion=\toks42
+) (c:/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(c:/texlive/2022/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package hyperref Info: Link coloring ON on input line 6.
+
+(./Section2.out) (./Section2.out)
+\@outlinefile=\write4
+\openout4 = `Section2.out'.
+
+LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
+ 11.
+
+(c:/texlive/2022/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
+File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
+ 11.
+
+(c:/texlive/2022/texmf-dist/tex/latex/psnfss/omlztmcm.fd
+File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
+ 11.
+
+(c:/texlive/2022/texmf-dist/tex/latex/psnfss/omsztmcm.fd
+File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
+ 11.
+
+(c:/texlive/2022/texmf-dist/tex/latex/psnfss/omxztmcm.fd
+File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 1
+1.
+
+(c:/texlive/2022/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 11.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 11.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 11.
+
+(../Equations/lifecycleutility.tex) (../Equations/IBC.tex)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 49.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 49.
+
+
+Package natbib Warning: Citation `Keane2001-yk' on page 1 undefined on input li
+ne 49.
+
+
+Package natbib Warning: Citation `MaCurdy1981-iy' on page 1 undefined on input 
+line 54.
+
+
+Package natbib Warning: Citation `Altonji1986-zf' on page 1 undefined on input 
+line 54.
+
+
+Package natbib Warning: Citation `MaCurdy1981-iy' on page 1 undefined on input 
+line 54.
+
+
+Package natbib Warning: Citation `Altonji1986-zf' on page 1 undefined on input 
+line 54.
+
+[1
+
+{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.1.3}
+) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.57 \end{equation*}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{equation.1.3}
+) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.57 \end{equation*}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{equation.1.3}
+) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.57 \end{equation*}
+                    ]
+
+Package natbib Warning: Citation `Shaw1989-jb' on page 2 undefined on input lin
+e 58.
+
+
+Package natbib Warning: Citation `Hotz1988-gl' on page 2 undefined on input lin
+e 58.
+
+
+Package natbib Warning: Citation `Shaw1989-jb' on page 2 undefined on input lin
+e 58.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.1.3}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.60 \begin{equation}
+                      \tag{4a}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.1.3}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.60 \begin{equation}
+                      \tag{4a}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.1.3}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.60 \begin{equation}
+                      \tag{4a}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.1.3}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.60 \begin{equation}
+                      \tag{4a}
+./Section2.tex:65: Undefined control sequence.
+<argument> FigDir 
+                  /Figure2.tex
+l.65 \input{\FigDir/Figure2.tex}
+                                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./Section2.tex:65: Undefined control sequence.
+<argument> FigDir 
+                  /Figure2.tex
+l.65 \input{\FigDir/Figure2.tex}
+                                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./Section2.tex:65: Undefined control sequence.
+<inserted text> FigDir 
+                       /Figure2.tex
+l.65 \input{\FigDir/Figure2.tex}
+                                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: File `//Figure2.tex' not found.
 
 Type X to quit or <RETURN> to proceed,
 or enter new name. (Default extension: tex)
 
 Enter file name: 
-../econtexRoot.tex:5: Emergency stop.
+./Section2.tex:65: Emergency stop.
 <read *> 
          
-l.5 \input{\econtexPaths}
-                         ^^M
+l.65 \input{\FigDir/Figure2.tex}
+                                ^^M
 *** (cannot \read from terminal in nonstop modes)
 
  
 Here is how much of TeX's memory you used:
- 22326 strings out of 474971
- 418294 string characters out of 5780120
- 730451 words of memory out of 5000000
- 43488 multiletter control sequences out of 15000+600000
- 470903 words of font info for 29 fonts, out of 8000000 for 9000
+ 23227 strings out of 474971
+ 434791 string characters out of 5780120
+ 761324 words of memory out of 5000000
+ 44294 multiletter control sequences out of 15000+600000
+ 512679 words of font info for 93 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 105i,0n,107p,434b,94s stack positions out of 10000i,1000n,20000p,200000b,200000s
-../econtexRoot.tex:5:  ==> Fatal error occurred, no output PDF file produced!
+ 105i,17n,107p,2223b,442s stack positions out of 10000i,1000n,20000p,200000b,200000s
+./Section2.tex:65:  ==> Fatal error occurred, no output PDF file produced!
