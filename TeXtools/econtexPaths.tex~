@@ -1,7 +1,0 @@
-% Mimicing professor's "ugly" solution to enable sharing base code between local LaTeX compilation and Overleaf
-
-\providecommand{\FigDir}{\econtexRoot/FigDir}
-\providecommand{\DataDir}{\econtexRoot/Data}
-\providecommand{\SectionDir}{\econtexRoot/Sections}
-\providecommand{\AppDir}{\econtexRoot/Appendices}
-\providecommand{\TablesDir}{\econtexRoot/Tables}
