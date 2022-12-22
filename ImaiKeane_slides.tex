@@ -6,12 +6,11 @@
 
 % Want to be able to cite, without printing bibliography
 \usepackage{bibentry}
- \usepackage[backend=bibtex,style=authoryear]{biblatex}
-%\usepackage[backend=bibtex,style=authoryear]{bibtex}
+\usepackage[backend=bibtex,style=authoryear]{biblatex}
 \addbibresource{ImaiKeane.bib}
 
 % Set a Boolean so I can omit the TOC before the intro
-\input{./TeXtools/econtexRoot.tex}
+\input{./econtexRoot}
 \input{\tools/TOCinstructions.tex}
 %\input{./packages.tex}
 
@@ -186,8 +185,8 @@
   \caption{AGE-ASSET PROFILES}
   \label{fig:AgeAssetProfiles}
       \end{figure}
-    \end{frame}
-    
- % \nobibliography{./ImaiKeane.bib}
+          \end{frame}
+          
+ \nobibliography{./ImaiKeane.bib}
   
 \end{document}
