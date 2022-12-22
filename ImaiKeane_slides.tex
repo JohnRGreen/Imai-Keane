@@ -5,9 +5,9 @@
 \usetheme{Warsaw}
 
 % Want to be able to cite, without printing bibliography
-\usepackage{bibentry}
-%\usepackage[backend=bibtex,style=authoryear]{biblatex}
-%\addbibresource{ImaiKeane.bib}
+% \usepackage{bibentry}
+\usepackage[backend=bibtex,style=authoryear]{biblatex}
+\addbibresource{ImaiKeane.bib}
 
 % Set a Boolean so I can omit the TOC before the intro
 \input{./econtexRoot}
@@ -187,10 +187,8 @@
       \end{figure}
           \end{frame}
 
-          \begin{frame}[t, allowframebreaks]
-            \frametitle{References}
-            \bibliographystyle{amsalpha}
-            \bibliography{ImaiKeane}
+          \begin{frame}
+            \printbibliography
             \end{frame}
           
 % \nobibliography{./ImaiKeane.bib}
