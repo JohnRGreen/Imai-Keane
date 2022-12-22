@@ -1,0 +1,218 @@
+\begin{thebibliography}{23}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Altonji(1986)]{Altonji1986-zf}
+Joseph~G Altonji.
+\newblock {Intertemporal Substitution in Labor Supply: Evidence from Micro
+  Data}.
+\newblock \emph{The journal of political economy}, 94\penalty0 (3, Part
+  2):\penalty0 S176--S215, June 1986.
+\newblock ISSN 0022-3808.
+\newblock \doi{10.1086/261403}.
+\newblock URL \url{https://doi.org/10.1086/261403}.
+
+\bibitem[Altuǧ and Miller(1998)]{Altug1998-ou}
+Sumru Altuǧ and Robert~A Miller.
+\newblock {The Effect of Work Experience on Female Wages and Labour Supply}.
+\newblock \emph{The Review of economic studies}, 65\penalty0 (1):\penalty0
+  45--85, 1998.
+\newblock ISSN 0034-6527.
+\newblock URL \url{http://www.jstor.org/stable/2567003}.
+
+\bibitem[Ben-Porath(1967)]{Ben-Porath1967-sf}
+Yoram Ben-Porath.
+\newblock {The Production of Human Capital and the Life Cycle of Earnings}.
+\newblock \emph{The journal of political economy}, 75\penalty0 (4):\penalty0
+  352--365, 1967.
+\newblock ISSN 0022-3808.
+\newblock URL \url{http://www.jstor.org/stable/1828596}.
+
+\bibitem[Blinder and Weiss(1976)]{Blinder1976-dv}
+Alan~S Blinder and Yoram Weiss.
+\newblock {Human Capital and Labor Supply: A Synthesis}.
+\newblock \emph{The journal of political economy}, 84\penalty0 (3):\penalty0
+  449--472, 1976.
+\newblock ISSN 0022-3808.
+\newblock URL \url{http://www.jstor.org/stable/1829864}.
+
+\bibitem[Browning et~al.(1985)Browning, Deaton, and Irish]{Browning1985-ox}
+Martin Browning, Angus Deaton, and Margaret Irish.
+\newblock {A Profitable Approach to Labor Supply and Commodity Demands over the
+  Life-Cycle}.
+\newblock \emph{Econometrica: journal of the Econometric Society}, 53\penalty0
+  (3):\penalty0 503--543, 1985.
+\newblock ISSN 0012-9682, 1468-0262.
+\newblock \doi{10.2307/1911653}.
+\newblock URL \url{http://www.jstor.org/stable/1911653}.
+
+\bibitem[Carroll(1996)]{Carroll1996-yj}
+Christopher~D Carroll.
+\newblock {Buffer-Stock Saving and the Life Cycle/Permanent Income Hypothesis}.
+\newblock October 1996.
+\newblock URL \url{http://www.nber.org/papers/w5788}.
+
+\bibitem[Chang et~al.(2002)Chang, Gomes, and Schorfheide]{Chang2002-zs}
+Yongsung Chang, Joao~F Gomes, and Frank Schorfheide.
+\newblock {Learning-by-Doing as a Propagation Mechanism}.
+\newblock \emph{The American economic review}, 92\penalty0 (5):\penalty0
+  1498--1520, December 2002.
+\newblock ISSN 0002-8282.
+\newblock \doi{10.1257/000282802762024601}.
+\newblock URL
+  \url{https://www.aeaweb.org/articles?id=10.1257/000282802762024601}.
+
+\bibitem[Cooper and Johri(1999)]{Cooper1999-af}
+Russell Cooper and Alok Johri.
+\newblock {Learning by Doing and Aggregate Fluctuations}.
+\newblock January 1999.
+\newblock URL \url{http://www.nber.org/papers/w6898}.
+
+\bibitem[Eckstein and Wolpin(1989)]{Eckstein1989-ji}
+Zvi Eckstein and Kenneth~I Wolpin.
+\newblock {Dynamic Labour Force Participation of Married Women and Endogenous
+  Work Experience}.
+\newblock \emph{The Review of economic studies}, 56\penalty0 (3):\penalty0
+  375--390, 1989.
+\newblock ISSN 0034-6527.
+\newblock \doi{10.2307/2297553}.
+\newblock URL \url{http://www.jstor.org/stable/2297553}.
+
+\bibitem[Eichenbaum et~al.(1988)Eichenbaum, Hansen, and
+  Singleton]{Eichenbaum1988-kg}
+Martin~S Eichenbaum, Lars~Peter Hansen, and Kenneth~J Singleton.
+\newblock {A Time Series Analysis of Representative Agent Models of Consumption
+  and Leisure Choice Under Uncertainty}.
+\newblock \emph{The quarterly journal of economics}, 103\penalty0 (1):\penalty0
+  51--78, 1988.
+\newblock ISSN 0033-5533.
+\newblock URL
+  \url{https://ideas.repec.org/a/oup/qjecon/v103y1988i1p51-78..html}.
+
+\bibitem[Geweke and Keane(2001)]{Geweke2001-px}
+John Geweke and Michael Keane.
+\newblock {Chapter 56 - Computationally Intensive Methods for Integration in
+  Econometrics**The authors gratefully acknowledge financial support from
+  National Science Foundation grants SBR-9511280, SBR-9731037, SES-9814342, and
+  SES-9819444}.
+\newblock In James~J Heckman and Edward Leamer, editors, \emph{{Handbook of
+  Econometrics}}, volume~5, pages 3463--3568. Elsevier, January 2001.
+\newblock \doi{10.1016/S1573-4412(01)05009-7}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/S1573441201050097}.
+
+\bibitem[Goeree et~al.(2000)Goeree, Holt, and Palfrey]{Goeree2000-la}
+J~Goeree, C~Holt, and T~Palfrey.
+\newblock {Risk Averse Behavior in Asymmetric Matching Pennies Games}.
+\newblock 2000.
+\newblock URL
+  \url{https://www.semanticscholar.org/paper/d62d7c911dacdc7edbd04a82508ecc0b8c016eca}.
+
+\bibitem[Heckman(1976{\natexlab{a}})]{Heckman1976-lb}
+James~J Heckman.
+\newblock {A Life-Cycle Model of Earnings, Learning, and Consumption}.
+\newblock \emph{The journal of political economy}, 84\penalty0 (4):\penalty0
+  S9--S44, 1976{\natexlab{a}}.
+\newblock ISSN 0022-3808.
+\newblock URL \url{http://www.jstor.org/stable/1831101}.
+
+\bibitem[Heckman(1976{\natexlab{b}})]{Heckman1976-lc}
+James~J Heckman.
+\newblock {Estimates of a Human Capital Production Function Embedded in a
+  Life-Cycle Model of Labor Supply}.
+\newblock Technical Report c3963, National Bureau of Economic Research, January
+  1976{\natexlab{b}}.
+\newblock URL
+  \url{https://www.nber.org/books-and-chapters/household-production-and-consumption/estimates-human-capital-production-function-embedded-life-cycle-model-labor-supply}.
+
+\bibitem[Hotz et~al.(1988)Hotz, Kydland, and Sedlacek]{Hotz1988-gl}
+V~Joseph Hotz, Finn~E Kydland, and Guilherme~L Sedlacek.
+\newblock {Intertemporal Preferences and Labor Supply}.
+\newblock \emph{Econometrica: journal of the Econometric Society}, 56\penalty0
+  (2):\penalty0 335--360, 1988.
+\newblock ISSN 0012-9682.
+\newblock \doi{10.2307/1911075}.
+\newblock URL \url{http://www.jstor.org/stable/1911075}.
+
+\bibitem[Hubbard et~al.(1994)Hubbard, Skinner, and Zeldes]{Hubbard1994-qp}
+R~Glenn Hubbard, Jonathan Skinner, and Stephen~P Zeldes.
+\newblock {The importance of precautionary motives in explaining individual and
+  aggregate saving}.
+\newblock \emph{Carnegie-Rochester Conference Series on Public Policy},
+  40:\penalty0 59--125, June 1994.
+\newblock ISSN 0167-2231.
+\newblock \doi{10.1016/0167-2231(94)90004-3}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/0167223194900043}.
+
+\bibitem[Keane and Wolpin(1994)]{Keane1994-sm}
+Michael~P Keane and Kenneth~I Wolpin.
+\newblock {The Solution and Estimation of Discrete Choice Dynamic Programming
+  Models by Simulation and Interpolation: Monte Carlo Evidence}.
+\newblock \emph{The review of economics and statistics}, 76\penalty0
+  (4):\penalty0 648--672, 1994.
+\newblock ISSN 0034-6535.
+\newblock \doi{10.2307/2109768}.
+\newblock URL \url{http://www.jstor.org/stable/2109768}.
+
+\bibitem[Keane and Wolpin(1997)]{Keane1997-mg}
+Michael~P Keane and Kenneth~I Wolpin.
+\newblock {The Career Decisions of Young Men}.
+\newblock \emph{The journal of political economy}, 105\penalty0 (3):\penalty0
+  473--522, 1997.
+\newblock ISSN 0022-3808.
+\newblock \doi{10.1086/262080}.
+\newblock URL \url{http://www.jstor.org/stable/10.1086/262080}.
+
+\bibitem[Keane and Wolpin(2001)]{Keane2001-yk}
+Michael~P Keane and Kenneth~I Wolpin.
+\newblock {The Effect of Parental Transfers and Borrowing Constraints on
+  Educational Attainment}.
+\newblock \emph{International economic review}, 42\penalty0 (4):\penalty0
+  1051--1103, 2001.
+\newblock ISSN 0020-6598.
+\newblock URL \url{http://www.jstor.org/stable/826985}.
+
+\bibitem[Lucas and Rapping(1969)]{Lucas1969-ti}
+Robert~E Lucas and Leonard~A Rapping.
+\newblock {Real wages, employment, and inflation}.
+\newblock \emph{The journal of political economy}, 77\penalty0 (5):\penalty0
+  721--754, September 1969.
+\newblock ISSN 0022-3808, 1537-534X.
+\newblock \doi{10.1086/259559}.
+\newblock URL
+  \url{https://EconPapers.repec.org/RePEc:ucp:jpolec:v:77:y:1969:i:5:p:721-54}.
+
+\bibitem[MaCurdy(1981)]{MaCurdy1981-iy}
+Thomas~E MaCurdy.
+\newblock {An Empirical Model of Labor Supply in a Life-Cycle Setting}.
+\newblock \emph{The journal of political economy}, 89\penalty0 (6):\penalty0
+  1059--1085, 1981.
+\newblock ISSN 0022-3808.
+\newblock \doi{10.1086/261023}.
+\newblock URL
+  \url{https://EconPapers.repec.org/RePEc:ucp:jpolec:v:89:y:1981:i:6:p:1059-85}.
+
+\bibitem[Prescott(1986)]{Prescott1986-vn}
+Edward~C Prescott.
+\newblock {Theory ahead of business-cycle measurement}.
+\newblock \emph{Carnegie-Rochester Conference Series on Public Policy},
+  25:\penalty0 11--44, September 1986.
+\newblock ISSN 0167-2231.
+\newblock \doi{10.1016/0167-2231(86)90035-7}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/0167223186900357}.
+
+\bibitem[Shaw(1989)]{Shaw1989-jb}
+Kathryn~L Shaw.
+\newblock {Life-Cycle Labor Supply with Human Capital Accumulation}.
+\newblock \emph{International economic review}, 30\penalty0 (2):\penalty0
+  431--456, 1989.
+\newblock ISSN 0020-6598.
+\newblock \doi{10.2307/2526656}.
+\newblock URL \url{http://www.jstor.org/stable/2526656}.
+
+\end{thebibliography}
