@@ -1,0 +1,25 @@
+% List all of the packages used in all of the files, which can the just be added as an input.
+\usepackage[margin=1in]{geometry}
+\usepackage{titlesec}
+\usepackage{amsmath}
+\usepackage{subfiles}
+\usepackage{mathptmx}
+% \usepackage{csvsimple-l3}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{tabularx,ragged2e,booktabs,caption}
+\usepackage{tikz}
+\usepackage[colorlinks=true,allcolors=blue]{hyperref}
+\usepackage{graphicx}
+\usepackage{changepage}
+\usepackage{natbib}
+\usepackage{longtable}
+\usepackage{abstract}
+\usepackage{atbegshi}% http://ctan.org/pkg/atbegshi
+\usepackage{xr}
+
+% Allow different actions depending on whether document is being processed as
+% subfile or being process as standalone
+\providecommand{\onlyinsubfile}{}
+\renewcommand{\onlyinsubfile}[1]{#1}
+\newcommand\labelprefix{}

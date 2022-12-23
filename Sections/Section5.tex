@@ -1,7 +1,10 @@
 % Section 5 page 612 -
 \input{./econtexRoot}
+\input{./econtexRoot}
 \documentclass[\econtexRoot/ImaiKeane]{subfiles}
-%\onlyinsubfile{\externaldocument{\econtexRoot/ImaiKeane}}
+\input{\tools/onlyinsubfile}
+\onlyinsubfile{\externaldocument{\econtexRoot/ImaiKeane}} % Get xrefs from the main file
+
 
 \begin{document}
 \section{DATA}

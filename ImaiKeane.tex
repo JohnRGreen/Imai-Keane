@@ -1,10 +1,11 @@
 \documentclass[12pt]{article}
 
-% load in all the packages I will need to use
-%\input{./TeXtools\packages}
+% In the terminology of Chris: "tell it who its Daddy is":
 \input{./econtexRoot}
-%\input{\econtexRoot/
-\input{\tools/packages}
+
+% All of the required packages:
+\usepackage{\tools/ImaiKeane}
+
 % For some reason generating a blank first page, which I would like to remove:
 \AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
 

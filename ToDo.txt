@@ -1,4 +1,0 @@
-Next steps:
-Make Jupyter slides
-Code up model to reproduce results
-Make Jupyter notebook walking through model
