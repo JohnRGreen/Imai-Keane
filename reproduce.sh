@@ -22,7 +22,7 @@ for file in "$texname" "$texname"_slides; do
 #    eval "$dep"
     cmd="pdflatex -halt-on-error -output-directory=$output_directory $file"
     eval "$cmd"
-    eval "$cmd > /dev/null" # Hide second output to reduce clutter
+    # eval "$cmd > /dev/null" # Hide second output to reduce clutter
     bibtex $output_directory/"$file"
     eval "$cmd" # Hide third output to reduce clutter
     eval "$cmd > /dev/null" 
